@@ -1,0 +1,1247 @@
+Publisher:
+  Publisher_1:
+    name: Prentice-Hall
+  Publisher_2:
+    name: Oracle
+  Publisher_3:
+    name: 'Silicon Press'
+  Publisher_4:
+    name: 'Prentice Hall'
+  Publisher_5:
+    name: Springer-Verlag
+  Publisher_6:
+    name: Benjamin-Cummings
+  Publisher_7:
+    name: 'Expert Verlag'
+  Publisher_8:
+    name: Addison-Wesley
+  Publisher_9:
+    name: 'Kluwer Academic Publishers'
+  Publisher_10:
+    name: 'Chapman & Hall'
+  Publisher_11:
+    name: 'Springer Verlag'
+  Publisher_12:
+    name: Wiley
+  Publisher_13:
+    name: 'John Wiley & Sons'
+  Publisher_14:
+    name: 'Ellis Horwood Limited'
+  Publisher_15:
+    name: 'Wiley & Sons'
+  Publisher_16:
+    name: Vulkan-Verlag
+  Publisher_17:
+    name: 'Ieee Computer Society'
+  Publisher_18:
+    name: Kluwer
+  Publisher_19:
+    name: Huthig
+  Publisher_20:
+    name: Ieee
+  Publisher_21:
+    name: Blackwell
+  Publisher_22:
+    name: 'Simon & Shuster'
+  Publisher_23:
+    name: Sams
+  Publisher_24:
+    name: 'Krie Ger'
+  Publisher_25:
+    name: 'Oldenbourg Verlag'
+  Publisher_26:
+    name: Pws-Kent
+  Publisher_27:
+    name: V.N.R.
+  Publisher_28:
+    name: 'B/H Newnes'
+  Publisher_29:
+    name: Vogel
+  Publisher_30:
+    name: D.E.C.
+  Publisher_31:
+    name: 'Ptr Prentice Hall'
+  Publisher_32:
+    name: Pentech-Press
+  Publisher_33:
+    name: Kap
+  Publisher_34:
+    name: Butterworth-Heineman
+  Publisher_35:
+    name: 'M & T'
+  Publisher_36:
+    name: 'Elsevier / I.E.C.'
+  Publisher_37:
+    name: I.E.C.
+Book:
+  Book_1:
+    title: 'Real-time software for control'
+    Author: Author_1
+    Publisher: Publisher_1
+    isbn: 0-13-762824-2
+    year: '1990'
+    created_at: '2011-01-16 23:29:13'
+    updated_at: '2011-01-16 23:29:13'
+  Book_2:
+    title: 'Computer controlled systems'
+    Author: Author_2
+    Publisher: Publisher_1
+    isbn: 0-13-172784-2
+    year: '1990'
+    created_at: '2011-01-16 23:29:13'
+    updated_at: '2011-01-16 23:29:13'
+  Book_3:
+    title: 'Multiple processing'
+    Author: Author_3
+    Publisher: Publisher_1
+    isbn: 0-13-605213-4
+    year: '1989'
+    created_at: '2011-01-16 23:29:13'
+    updated_at: '2011-01-16 23:29:13'
+  Book_4:
+    title: 'Case method. Function and process modelling'
+    Author: Author_4
+    Publisher: Publisher_2
+    isbn: 0-201-56525-0
+    year: '1992'
+    created_at: '2011-01-16 23:29:13'
+    updated_at: '2011-01-16 23:29:13'
+  Book_5:
+    title: 'Case method. Entity relationship modelling'
+    Author: Author_4
+    Publisher: Publisher_2
+    isbn: 0-201-41696-4
+    year: '1992'
+    created_at: '2011-01-16 23:29:13'
+    updated_at: '2011-01-16 23:29:13'
+  Book_6:
+    title: 'Case Method.Tasks And Deliverables'
+    Author: Author_4
+    Publisher: Publisher_2
+    isbn: 0-201-41697-2
+    year: '1991'
+    created_at: '2011-01-16 23:29:14'
+    updated_at: '2011-01-16 23:29:14'
+  Book_7:
+    title: 'Programming distributed systems'
+    Author: Author_5
+    Publisher: Publisher_3
+    isbn: 0-13-722083-9
+    year: '1990'
+    created_at: '2011-01-16 23:29:14'
+    updated_at: '2011-01-16 23:29:14'
+  Book_8:
+    title: 'Electric circuit analysis'
+    Author: Author_6
+    Publisher: Publisher_4
+    isbn: 0-13-249756-5
+    year: '1992'
+    created_at: '2011-01-16 23:29:14'
+    updated_at: '2011-01-16 23:29:14'
+  Book_9:
+    title: 'Adaptive optimal control'
+    Author: Author_7
+    Publisher: Publisher_4
+    isbn: 0-13-013277-2
+    year: '1990'
+    created_at: '2011-01-16 23:29:14'
+    updated_at: '2011-01-16 23:29:14'
+  Book_10:
+    title: 'Real time computer control'
+    Author: Author_8
+    Publisher: Publisher_4
+    isbn: 0-13-762501-4
+    year: '1988'
+    created_at: '2011-01-16 23:29:14'
+    updated_at: '2011-01-16 23:29:14'
+  Book_11:
+    title: 'Tinbergen lectureson organization theory'
+    Author: Author_9
+    Publisher: Publisher_5
+    isbn: 3-540-18515-1
+    year: '1988'
+    created_at: '2011-01-16 23:29:14'
+    updated_at: '2011-01-16 23:29:14'
+  Book_12:
+    title: 'Conceptual database design'
+    Author: Author_10
+    Publisher: Publisher_6
+    isbn: 0-8053-0244-1
+    year: '1992'
+    created_at: '2011-01-16 23:29:14'
+    updated_at: '2011-01-16 23:29:14'
+  Book_13:
+    title: 'Sensoren messaufnehmer'
+    Author: Author_11
+    Publisher: Publisher_7
+    isbn: 3-8169-0278-2
+    year: '1988'
+    created_at: '2011-01-16 23:29:14'
+    updated_at: '2011-01-16 23:29:14'
+  Book_14:
+    title: 'The fast fourier transform and its applications'
+    Author: Author_12
+    Publisher: Publisher_4
+    isbn: 0-13-307547-8
+    year: '1988'
+    created_at: '2011-01-16 23:29:14'
+    updated_at: '2011-01-16 23:29:14'
+  Book_15:
+    title: 'Robust stabilization against structured perturbations'
+    Author: Author_13
+    Publisher: Publisher_5
+    isbn: 3-540-18056-7-0-387-18056-7
+    year: '1987'
+    created_at: '2011-01-16 23:29:14'
+    updated_at: '2011-01-16 23:29:14'
+  Book_16:
+    title: 'The relational model for database management'
+    Author: Author_14
+    Publisher: Publisher_8
+    isbn: 0-201-14192-2
+    year: '1990'
+    created_at: '2011-01-16 23:29:14'
+    updated_at: '2011-01-16 23:29:14'
+  Book_17:
+    title: 'Low-noise wide-band amplifiers in bipolar and cmos technologies'
+    Author: Author_15
+    Publisher: Publisher_9
+    isbn: 0-7923-9096-2
+    year: '1991'
+    created_at: '2011-01-16 23:29:15'
+    updated_at: '2011-01-16 23:29:15'
+  Book_18:
+    title: 'Clean coding in turbo pascal 6'
+    Author: Author_16
+    Publisher: Publisher_4
+    isbn: 0-13-138371-X
+    year: '1991'
+    created_at: '2011-01-16 23:29:15'
+    updated_at: '2011-01-16 23:29:15'
+  Book_19:
+    title: 'Relational database'
+    Author: Author_17
+    Publisher: Publisher_8
+    isbn: 0-201-54303-6
+    year: '1992'
+    created_at: '2011-01-16 23:29:15'
+    updated_at: '2011-01-16 23:29:15'
+  Book_20:
+    title: 'Computer aided...'
+    Author: Author_18
+    Publisher: Publisher_10
+    isbn: 0-412-34230
+    year: '1991'
+    created_at: '2011-01-16 23:29:15'
+    updated_at: '2011-01-16 23:29:15'
+  Book_21:
+    title: 'Knowledge systems design'
+    Author: Author_19
+    Publisher: Publisher_4
+    isbn: 0-13-516428-1
+    year: '1989'
+    created_at: '2011-01-16 23:29:15'
+    updated_at: '2011-01-16 23:29:15'
+  Book_22:
+    title: 'Advanced computing concepts and techniques in control engineering'
+    Author: Author_20
+    Publisher: Publisher_11
+    isbn: 3-540-50037-50-387-50037-5
+    year: '1988'
+    created_at: '2011-01-16 23:29:15'
+    updated_at: '2011-01-16 23:29:15'
+  Book_23:
+    title: 'Structured systems analysis and design method'
+    Author: Author_21
+    Publisher: Publisher_4
+    isbn: 0-13-853698-8
+    year: '1992'
+    created_at: '2011-01-16 23:29:15'
+    updated_at: '2011-01-16 23:29:15'
+  Book_24:
+    title: 'Inside the eisa computers'
+    Author: Author_22
+    Publisher: Publisher_8
+    isbn: 0-201-52397-3
+    year: '1990'
+    created_at: '2011-01-16 23:29:15'
+    updated_at: '2011-01-16 23:29:15'
+  Book_25:
+    title: 'Crafting a compiler'
+    Author: Author_23
+    Publisher: Publisher_6
+    isbn: 0-8053-2166-7
+    year: '1991'
+    created_at: '2011-01-16 23:29:15'
+    updated_at: '2011-01-16 23:29:15'
+  Book_26:
+    title: 'Describing and recognizing 3-d objects using surface properties'
+    Author: Author_24
+    Publisher: Publisher_11
+    isbn: 0-387-97179-3-3-540-97179-3
+    year: '1990'
+    created_at: '2011-01-16 23:29:15'
+    updated_at: '2011-01-16 23:29:15'
+  Book_27:
+    title: 'Advanced econometric methods'
+    Author: Author_25
+    Publisher: Publisher_11
+    isbn: 0-387-96868-7-3-540-96868-7
+    year: '1988'
+    created_at: '2011-01-16 23:29:16'
+    updated_at: '2011-01-16 23:29:16'
+  Book_28:
+    title: 'File structures'
+    Author: Author_26
+    Publisher: Publisher_8
+    isbn: 0-201-55713-4
+    year: '1992'
+    created_at: '2011-01-16 23:29:16'
+    updated_at: '2011-01-16 23:29:16'
+  Book_29:
+    title: 'Electronic devices'
+    Author: Author_27
+    Publisher: Publisher_4
+    isbn: 0-13-336181-0
+    year: '1990'
+    created_at: '2011-01-16 23:29:16'
+    updated_at: '2011-01-16 23:29:16'
+  Book_30:
+    title: 'Non-linear circuits'
+    Author: Author_28
+    Publisher: Publisher_12
+    isbn: 0-471-92659-0
+    year: '1992'
+    created_at: '2011-01-16 23:29:16'
+    updated_at: '2011-01-16 23:29:16'
+  Book_31:
+    title: 'Automation production sistems and computer integrated manufacturing'
+    Author: Author_29
+    Publisher: Publisher_4
+    isbn: 0-13-054610-0
+    year: '1987'
+    created_at: '2011-01-16 23:29:16'
+    updated_at: '2011-01-16 23:29:16'
+  Book_32:
+    title: 'Digital electronic circuits'
+    Author: Author_30
+    Publisher: Publisher_4
+    isbn: 0-13-211608-1025
+    year: '1988'
+    created_at: '2011-01-16 23:29:16'
+    updated_at: '2011-01-16 23:29:16'
+  Book_33:
+    title: 'Object-oriented databases'
+    Author: Author_31
+    Publisher: Publisher_4
+    isbn: 0-13-630203-3
+    year: '1992'
+    created_at: '2011-01-16 23:29:16'
+    updated_at: '2011-01-16 23:29:16'
+  Book_34:
+    title: 'Computer architecture and design'
+    Author: Author_32
+    Publisher: Publisher_8
+    isbn: 0-201-18241-6
+    year: '1990'
+    created_at: '2011-01-16 23:29:16'
+    updated_at: '2011-01-16 23:29:16'
+  Book_35:
+    title: 'Distributed operating systems'
+    Author: Author_33
+    Publisher: Publisher_8
+    isbn: 0-201-41704-9
+    year: '1991'
+    created_at: '2011-01-16 23:29:16'
+    updated_at: '2011-01-16 23:29:16'
+  Book_36:
+    title: 'Principles of applied biomedical instrumentation'
+    Author: Author_34
+    Publisher: Publisher_13
+    isbn: 0-471-60899-8
+    year: '1989'
+    created_at: '2011-01-16 23:29:16'
+    updated_at: '2011-01-16 23:29:16'
+  Book_37:
+    title: 'Neural and automata networks'
+    Author: Author_35
+    Publisher: Publisher_9
+    isbn: 0-7923-0632-5
+    year: '1991'
+    created_at: '2011-01-16 23:29:16'
+    updated_at: '2011-01-16 23:29:16'
+  Book_38:
+    title: 'Transputer hardware and system design'
+    Author: Author_36
+    Publisher: Publisher_4
+    isbn: 0-13-953001-0
+    year: '1993'
+    created_at: '2011-01-16 23:29:16'
+    updated_at: '2011-01-16 23:29:16'
+  Book_39:
+    title: 'Knowledge representation and language in ai'
+    Author: Author_37
+    Publisher: Publisher_14
+    isbn: 0-13-515123-6
+    year: '1991'
+    created_at: '2011-01-16 23:29:17'
+    updated_at: '2011-01-16 23:29:17'
+  Book_40:
+    title: 'Computer and robot vision 1'
+    Author: Author_38
+    Publisher: Publisher_8
+    isbn: 0-201-10877-1
+    year: '1992'
+    created_at: '2011-01-16 23:29:17'
+    updated_at: '2011-01-16 23:29:17'
+  Book_41:
+    title: 'Modern electronic instrumentation and measurementtechniques'
+    Author: Author_39
+    Publisher: Publisher_4
+    isbn: 0-13-593385-4
+    year: '1990'
+    created_at: '2011-01-16 23:29:17'
+    updated_at: '2011-01-16 23:29:17'
+  Book_42:
+    title: 'Introduction to electric circuits'
+    Author: Author_40
+    Publisher: Publisher_4
+    isbn: 0-13-481607-2
+    year: '1989'
+    created_at: '2011-01-16 23:29:17'
+    updated_at: '2011-01-16 23:29:17'
+  Book_43:
+    title: 'Progress in fuzzy sets and systems'
+    Author: Author_41
+    Publisher: Publisher_9
+    isbn: 0-7923-0730-5
+    year: '1990'
+    created_at: '2011-01-16 23:29:17'
+    updated_at: '2011-01-16 23:29:17'
+  Book_44:
+    title: 'Analysis and interpretation of range images'
+    Author: Author_42
+    Publisher: Publisher_11
+    isbn: 0-387-97200-5-3-540-97200-5
+    year: '1990'
+    created_at: '2011-01-16 23:29:17'
+    updated_at: '2011-01-16 23:29:17'
+  Book_45:
+    title: 'Introduction to expert systems'
+    Author: Author_43
+    Publisher: Publisher_8
+    isbn: 0-201-17578-9
+    year: '1990'
+    created_at: '2011-01-16 23:29:17'
+    updated_at: '2011-01-16 23:29:17'
+  Book_46:
+    title: 'Switched-mode power supplies in practice'
+    Author: Author_44
+    Publisher: Publisher_15
+    isbn: 0-471-92004-5
+    year: '1991'
+    created_at: '2011-01-16 23:29:17'
+    updated_at: '2011-01-16 23:29:17'
+  Book_47:
+    title: 'Computer processing of natural language'
+    Author: Author_45
+    Publisher: Publisher_4
+    isbn: 0-13-609678-6
+    year: '1991'
+    created_at: '2011-01-16 23:29:17'
+    updated_at: '2011-01-16 23:29:17'
+  Book_48:
+    title: 'Robotic engineering'
+    Author: Author_46
+    Publisher: Publisher_4
+    isbn: 0-13-468752-3
+    year: '1989'
+    created_at: '2011-01-16 23:29:17'
+    updated_at: '2011-01-16 23:29:17'
+  Book_49:
+    title: 'Parallel algorithms for machine intelligence and vision'
+    Author: Author_47
+    Publisher: Publisher_5
+    isbn: 0-387-97227-7-3-540-97227-7
+    year: '1990'
+    created_at: '2011-01-16 23:29:17'
+    updated_at: '2011-01-16 23:29:17'
+  Book_50:
+    title: 'Thermoelement praxis'
+    Author: Author_48
+    Publisher: Publisher_16
+    isbn: 3-8027-2140-3
+    year: '1987'
+    created_at: '2011-01-16 23:29:18'
+    updated_at: '2011-01-16 23:29:18'
+  Book_51:
+    title: 'Computerized instrumentation'
+    Author: Author_49
+    Publisher: Publisher_12
+    isbn: 0-471-92504-7
+    year: '1991'
+    created_at: '2011-01-16 23:29:18'
+    updated_at: '2011-01-16 23:29:18'
+  Book_52:
+    title: 'Tutorial On Robotics'
+    Author: Author_50
+    Publisher: Publisher_17
+    isbn: 0-8186-4658-4
+    year: '1986'
+    created_at: '2011-01-16 23:29:18'
+    updated_at: '2011-01-16 23:29:18'
+  Book_53:
+    title: 'Robot motion planning'
+    Author: Author_51
+    Publisher: Publisher_18
+    isbn: 0-7923-9206-X
+    year: '1993'
+    created_at: '2011-01-16 23:29:18'
+    updated_at: '2011-01-16 23:29:18'
+  Book_54:
+    title: 'Sensor based robots . algorithms and architectures'
+    Author: Author_53
+    Publisher: Publisher_5
+    isbn: 3-540-52298-0-0-387-52298-0
+    year: '1991'
+    created_at: '2011-01-16 23:29:18'
+    updated_at: '2011-01-16 23:29:18'
+  Book_55:
+    title: 'The m68000 microprocesor family'
+    Author: Author_54
+    Publisher: Publisher_4
+    isbn: 0-13-553108-X
+    year: '1991'
+    created_at: '2011-01-16 23:29:18'
+    updated_at: '2011-01-16 23:29:18'
+  Book_56:
+    title: 'artificial intelligence'
+    Author: Author_55
+    Publisher: Publisher_6
+    isbn: 0-8053-4780-1
+    year: '1993'
+    created_at: '2011-01-16 23:29:18'
+    updated_at: '2011-01-16 23:29:18'
+  Book_57:
+    title: 'Temperature measurement'
+    Author: Author_56
+    Publisher: Publisher_12
+    isbn: 0-471-92229-3
+    year: '1991'
+    created_at: '2011-01-16 23:29:18'
+    updated_at: '2011-01-16 23:29:18'
+  Book_58:
+    title: 'Functional programming through lambda calculus'
+    Author: Author_57
+    Publisher: Publisher_8
+    isbn: 0-201-17812-5
+    year: '1989'
+    created_at: '2011-01-16 23:29:18'
+    updated_at: '2011-01-16 23:29:18'
+  Book_59:
+    title: Oszilloskopen
+    Author: Author_58
+    Publisher: Publisher_19
+    isbn: 3-7785-1330-3
+    year: '1989'
+    created_at: '2011-01-16 23:29:18'
+    updated_at: '2011-01-16 23:29:18'
+  Book_60:
+    title: 'Multirobot systems'
+    Author: Author_59
+    Publisher: Publisher_20
+    isbn: 0-8186-1977-5
+    year: '1990'
+    created_at: '2011-01-16 23:29:19'
+    updated_at: '2011-01-16 23:29:19'
+  Book_61:
+    title: '32-bit microprocessors'
+    Author: Author_60
+    Publisher: Publisher_21
+    isbn: 0-632-02328-7
+    year: '1991'
+    created_at: '2011-01-16 23:29:19'
+    updated_at: '2011-01-16 23:29:19'
+  Book_62:
+    title: 'Grounding and shielding techniques in instrumentation'
+    Author: Author_61
+    Publisher: Publisher_12
+    isbn: 0-471-83805-5
+    year: '1986'
+    created_at: '2011-01-16 23:29:19'
+    updated_at: '2011-01-16 23:29:19'
+  Book_63:
+    title: 'Robust process control'
+    Author: Author_62
+    Publisher: Publisher_4
+    isbn: 0-13-782153-0
+    year: '1989'
+    created_at: '2011-01-16 23:29:19'
+    updated_at: '2011-01-16 23:29:19'
+  Book_64:
+    title: 'Linear circuit analysis'
+    Author: Author_63
+    Publisher: Publisher_22
+    isbn: 981-00-3829-1
+    year: '1992'
+    created_at: '2011-01-16 23:29:19'
+    updated_at: '2011-01-16 23:29:19'
+  Book_65:
+    title: 'Industrial robotics'
+    Author: Author_64
+    Publisher: Publisher_4
+    isbn: 0-13-463209-5
+    year: '1988'
+    created_at: '2011-01-16 23:29:19'
+    updated_at: '2011-01-16 23:29:19'
+  Book_66:
+    title: 'Logic design principles'
+    Author: Author_65
+    Publisher: Publisher_4
+    isbn: 0-13-539784-7
+    year: '1986'
+    created_at: '2011-01-16 23:29:19'
+    updated_at: '2011-01-16 23:29:19'
+  Book_67:
+    title: 'Developing windows applications with Borland C++3'
+    Author: Author_66
+    Publisher: Publisher_23
+    isbn: 0-672-30231-4
+    year: '1992'
+    created_at: '2011-01-16 23:29:19'
+    updated_at: '2011-01-16 23:29:19'
+  Book_68:
+    title: 'Introduction to pspice'
+    Author: Author_67
+    Publisher: Publisher_8
+    isbn: 0-201-51318-8
+    year: '1993'
+    created_at: '2011-01-16 23:29:19'
+    updated_at: '2011-01-16 23:29:19'
+  Book_69:
+    title: 'Electric circuits'
+    Author: Author_67
+    Publisher: Publisher_8
+    isbn: 0-201-54987-5
+    year: '1993'
+    created_at: '2011-01-16 23:29:19'
+    updated_at: '2011-01-16 23:29:19'
+  Book_70:
+    title: 'Handbook of industrial robotics'
+    Author: Author_68
+    Publisher: Publisher_24
+    isbn: 0-89464-722-9
+    year: '1992'
+    created_at: '2011-01-16 23:29:20'
+    updated_at: '2011-01-16 23:29:20'
+  Book_71:
+    title: 'Practical reliability engineering'
+    Author: Author_69
+    Publisher: Publisher_15
+    isbn: 0-471-92696-5
+    year: '1992'
+    created_at: '2011-01-16 23:29:20'
+    updated_at: '2011-01-16 23:29:20'
+  Book_72:
+    title: 'Zeitdiskrete signal verarbeitung'
+    Author: Author_70
+    Publisher: Publisher_25
+    isbn: 3-486-21544-2
+    year: '1992'
+    created_at: '2011-01-16 23:29:20'
+    updated_at: '2011-01-16 23:29:20'
+  Book_73:
+    title: 'Computer system for automation and control'
+    Author: Author_71
+    Publisher: Publisher_4
+    isbn: 0-13-457581-4
+    year: '1992'
+    created_at: '2011-01-16 23:29:20'
+    updated_at: '2011-01-16 23:29:20'
+  Book_74:
+    title: 'Electronic measurement systems'
+    Author: Author_72
+    Publisher: Publisher_4
+    isbn: 0-13-251885-6
+    year: '1988'
+    created_at: '2011-01-16 23:29:20'
+    updated_at: '2011-01-16 23:29:20'
+  Book_75:
+    title: 'Sensors and signal conditioning'
+    Author: Author_73
+    Publisher: Publisher_12
+    isbn: 0-417-54565-1
+    year: '1991'
+    created_at: '2011-01-16 23:29:20'
+    updated_at: '2011-01-16 23:29:20'
+  Book_76:
+    title: 'Semiconductor memories'
+    Author: Author_74
+    Publisher: Publisher_12
+    isbn: 0-471-92465-2
+    year: '1991'
+    created_at: '2011-01-16 23:29:20'
+    updated_at: '2011-01-16 23:29:20'
+  Book_77:
+    title: 'Signals and systems'
+    Author: Author_75
+    Publisher: Publisher_26
+    isbn: 0-534-92169-8
+    year: '1991'
+    created_at: '2011-01-16 23:29:20'
+    updated_at: '2011-01-16 23:29:20'
+  Book_78:
+    title: 'Handbuch der industriellen messtechnik'
+    Author: Author_76
+    Publisher: Publisher_25
+    isbn: 3-486-21794-1
+    year: '1992'
+    created_at: '2011-01-16 23:29:20'
+    updated_at: '2011-01-16 23:29:20'
+  Book_79:
+    title: 'Transputer assembly language programming'
+    Author: Author_77
+    Publisher: Publisher_27
+    isbn: 0-442-00872-4
+    year: '1992'
+    created_at: '2011-01-16 23:29:21'
+    updated_at: '2011-01-16 23:29:21'
+  Book_80:
+    title: 'Advanced simulation and test methodologies for vlsi design'
+    Author: Author_78
+    Publisher: Publisher_27
+    isbn: 0-7476-0001-5
+    year: '1989'
+    created_at: '2011-01-16 23:29:21'
+    updated_at: '2011-01-16 23:29:21'
+  Book_81:
+    title: 'Digital television'
+    Author: Author_79
+    Publisher: Publisher_12
+    isbn: 0-471-92360-5
+    year: '1992'
+    created_at: '2011-01-16 23:29:21'
+    updated_at: '2011-01-16 23:29:21'
+  Book_82:
+    title: 'Control sensors and actuators'
+    Author: Author_81
+    Publisher: Publisher_4
+    isbn: 0-13-171745-6
+    year: '1989'
+    created_at: '2011-01-16 23:29:21'
+    updated_at: '2011-01-16 23:29:21'
+  Book_83:
+    title: 'Robotics designing the mechanisms for automated machinery'
+    Author: Author_82
+    Publisher: Publisher_4
+    isbn: 0-13-781683-9
+    year: '1991'
+    created_at: '2011-01-16 23:29:21'
+    updated_at: '2011-01-16 23:29:21'
+  Book_84:
+    title: 'Electronic design'
+    Author: Author_83
+    Publisher: Publisher_6
+    isbn: 0-8053-0285-9
+    year: '1991'
+    created_at: '2011-01-16 23:29:21'
+    updated_at: '2011-01-16 23:29:21'
+  Book_85:
+    title: 'Personal computer'
+    Author: Author_84
+    Publisher: Publisher_11
+    isbn: 3-540-52316-2
+    year: '1990'
+    created_at: '2011-01-16 23:29:21'
+    updated_at: '2011-01-16 23:29:21'
+  Book_86:
+    title: 'Three-dimensional computer vision'
+    Author: Author_85
+    Publisher: Publisher_11
+    isbn: 0-387-15119-2
+    year: '1987'
+    created_at: '2011-01-16 23:29:22'
+    updated_at: '2011-01-16 23:29:22'
+  Book_87:
+    title: 'Design and application of analog integrated circuits'
+    Author: Author_86
+    Publisher: Publisher_4
+    isbn: 0-13-026030-4
+    year: '1991'
+    created_at: '2011-01-16 23:29:22'
+    updated_at: '2011-01-16 23:29:22'
+  Book_88:
+    title: 'A systems approach to programmable controllers'
+    Author: Author_87
+    Publisher: Publisher_28
+    isbn: 0-7506-0231-7
+    year: '1991'
+    created_at: '2011-01-16 23:29:22'
+    updated_at: '2011-01-16 23:29:22'
+  Book_89:
+    title: Spectrumanalise
+    Author: Author_88
+    Publisher: Publisher_29
+    isbn: 3-8023-0290-7
+    year: '1990'
+    created_at: '2011-01-16 23:29:22'
+    updated_at: '2011-01-16 23:29:22'
+  Book_90:
+    title: 'Electronische messtechnik'
+    Author: Author_89
+    Publisher: Publisher_29
+    isbn: 3-8023-0203-6
+    year: '1991'
+    created_at: '2011-01-16 23:29:22'
+    updated_at: '2011-01-16 23:29:22'
+  Book_91:
+    title: 'Reliable computer systems design and evaluation'
+    Author: Author_90
+    Publisher: Publisher_30
+    isbn: 1-55558-075-0
+    year: '1992'
+    created_at: '2011-01-16 23:29:22'
+    updated_at: '2011-01-16 23:29:22'
+  Book_92:
+    title: 'Fundamentals of robotics analysis & control'
+    Author: Author_91
+    Publisher: Publisher_4
+    isbn: 0-13-344433-3
+    year: '1990'
+    created_at: '2011-01-16 23:29:22'
+    updated_at: '2011-01-16 23:29:22'
+  Book_93:
+    title: '16-bit and 32-bit microprocessors'
+    Author: Author_92
+    Publisher: Publisher_4
+    isbn: 0-13-81257-5
+    year: '1991'
+    created_at: '2011-01-16 23:29:22'
+    updated_at: '2011-01-16 23:29:22'
+  Book_94:
+    title: 'Unix network programming'
+    Author: Author_93
+    Publisher: Publisher_31
+    isbn: 0-13-949876-1
+    year: '1990'
+    created_at: '2011-01-16 23:29:22'
+    updated_at: '2011-01-16 23:29:22'
+  Book_95:
+    title: 'Broadcast television fundamentals'
+    Author: Author_94
+    Publisher: Publisher_32
+    isbn: 0-7273-0206-X
+    year: '1991'
+    created_at: '2011-01-16 23:29:23'
+    updated_at: '2011-01-16 23:29:23'
+  Book_96:
+    title: 'Algorithmic and register-transfer level synthessis:the system architect''s workbench'
+    Author: Author_95
+    Publisher: Publisher_33
+    isbn: 0-7923-9053-9
+    year: '1990'
+    created_at: '2011-01-16 23:29:23'
+    updated_at: '2011-01-16 23:29:23'
+  Book_97:
+    title: 'P.C. based instrumentation and control'
+    Author: Author_96
+    Publisher: Publisher_28
+    isbn: 0-7506-0038-1
+    year: '1991'
+    created_at: '2011-01-16 23:29:23'
+    updated_at: '2011-01-16 23:29:23'
+  Book_98:
+    title: 'Semantics of programming languages'
+    Author: Author_97
+    Publisher: Publisher_4
+    isbn: 0-13-805599-8
+    year: '1991'
+    created_at: '2011-01-16 23:29:23'
+    updated_at: '2011-01-16 23:29:23'
+  Book_99:
+    title: 'Modern operating systems'
+    Author: Author_98
+    Publisher: Publisher_4
+    isbn: 0-13-595752
+    year: '1992'
+    created_at: '2011-01-16 23:29:23'
+    updated_at: '2011-01-16 23:29:23'
+  Book_100:
+    title: 'The 68000 and 68020 microprocessors'
+    Author: Author_99
+    Publisher: Publisher_4
+    isbn: 0-13-812678-X
+    year: '1991'
+    created_at: '2011-01-16 23:29:23'
+    updated_at: '2011-01-16 23:29:23'
+  Book_101:
+    title: 'Fiber optic sensors'
+    Author: Author_100
+    Publisher: Publisher_12
+    isbn: 0-471-83007-0
+    year: '1991'
+    created_at: '2011-01-16 23:29:23'
+    updated_at: '2011-01-16 23:29:23'
+  Book_102:
+    title: 'Machine vision'
+    Author: Author_101
+    Publisher: Publisher_4
+    isbn: 0-13-543398-3
+    year: '1991'
+    created_at: '2011-01-16 23:29:23'
+    updated_at: '2011-01-16 23:29:23'
+  Book_103:
+    title: 'Fault diagnosis of digital circuits'
+    Author: Author_102
+    Publisher: Publisher_12
+    isbn: 0-471-92680-9
+    year: '1990'
+    created_at: '2011-01-16 23:29:24'
+    updated_at: '2011-01-16 23:29:24'
+  Book_104:
+    title: '8086/8088 assembly language programming'
+    Author: Author_103
+    Publisher: Publisher_12
+    isbn: 0-471-90463-5
+    year: '1988'
+    created_at: '2011-01-16 23:29:24'
+    updated_at: '2011-01-16 23:29:24'
+  Book_105:
+    title: Leistungselektronic
+    Author: Author_104
+    Publisher: Publisher_5
+    isbn: 0-387-82179-1
+    year: '1990'
+    created_at: '2011-01-16 23:29:24'
+    updated_at: '2011-01-16 23:29:24'
+  Book_106:
+    title: Datenwandler
+    Author: Author_105
+    Publisher: Publisher_29
+    isbn: 3-8023-0801-8
+    year: '1990'
+    created_at: '2011-01-16 23:29:24'
+    updated_at: '2011-01-16 23:29:24'
+  Book_107:
+    title: 'Programmable controllers operation and application'
+    Author: Author_106
+    Publisher: Publisher_4
+    isbn: 0-13-730037-9
+    year: '1988'
+    created_at: '2011-01-16 23:29:24'
+    updated_at: '2011-01-16 23:29:24'
+  Book_108:
+    title: 'Analog circuit design'
+    Author: Author_107
+    Publisher: Publisher_34
+    isbn: 0-7506-9166-2
+    year: '1991'
+    created_at: '2011-01-16 23:29:24'
+    updated_at: '2011-01-16 23:29:24'
+  Book_109:
+    title: 'Student reference manual for electronic instrumentation laboratories'
+    Author: Author_108
+    Publisher: Publisher_4
+    isbn: 0-13-251679-9
+    year: '1990'
+    created_at: '2011-01-16 23:29:24'
+    updated_at: '2011-01-16 23:29:24'
+  Book_110:
+    title: 'Programming language processors'
+    Author: Author_109
+    Publisher: Publisher_4
+    isbn: 0-13-720129-X
+    year: '1993'
+    created_at: '2011-01-16 23:29:25'
+    updated_at: '2011-01-16 23:29:25'
+  Book_111:
+    title: 'Programming language syntax and semantics'
+    Author: Author_109
+    Publisher: Publisher_4
+    isbn: 0-13-726274-4
+    year: '1991'
+    created_at: '2011-01-16 23:29:25'
+    updated_at: '2011-01-16 23:29:25'
+  Book_112:
+    title: 'Adaptive estimation and control'
+    Author: Author_110
+    Publisher: Publisher_4
+    isbn: 0-13-005422-4
+    year: '1992'
+    created_at: '2011-01-16 23:29:25'
+    updated_at: '2011-01-16 23:29:25'
+  Book_113:
+    title: 'Data structures and algorithm analysis'
+    Author: Author_111
+    Publisher: Publisher_6
+    isbn: 0-8053-9052
+    year: '1992'
+    created_at: '2011-01-16 23:29:25'
+    updated_at: '2011-01-16 23:29:25'
+  Book_114:
+    title: 'Programming in 3 dimensions'
+    Author: Author_112
+    Publisher: Publisher_35
+    isbn: 0-13-726613-8
+    year: '1992'
+    created_at: '2011-01-16 23:29:25'
+    updated_at: '2011-01-16 23:29:25'
+  Book_115:
+    title: 'Ieee standard digital interface for programmable instrumentation'
+    Author: Author_113
+    Publisher: Publisher_20
+    isbn: 471-62222-2
+    year: '1988'
+    created_at: '2011-01-16 23:29:25'
+    updated_at: '2011-01-16 23:29:25'
+  Book_116:
+    title: 'Electricity, electronics and telecommunications multilingual dictionary . german,dutch,swedish'
+    Author: Author_113
+    Publisher: Publisher_36
+    isbn: 0-444-895124
+    year: '1992'
+    created_at: '2011-01-16 23:29:25'
+    updated_at: '2011-01-16 23:29:25'
+  Book_117:
+    title: 'Electricity,electronics and telecommunications multilingual dictionary . russian and polish'
+    Author: Author_113
+    Publisher: Publisher_37
+    isbn: 0-444-895140
+    year: '1992'
+    created_at: '2011-01-16 23:29:25'
+    updated_at: '2011-01-16 23:29:25'
+  Book_118:
+    title: 'Electricity,electronics and telecommunications multilingual dictionary english french, russian, german-spanish-dutch-italian-swedish-polish'
+    Author: Author_113
+    Publisher: Publisher_37
+    isbn: 0-444-895108
+    year: '1992'
+    created_at: '2011-01-16 23:29:25'
+    updated_at: '2011-01-16 23:29:25'
+Author:
+  Author_1:
+    name: 'David M. Auslander'
+  Author_2:
+    name: 'Karl J. Astron'
+  Author_3:
+    name: 'A. John Anderson'
+  Author_4:
+    name: 'Richard Barker'
+  Author_5:
+    name: 'Henri Bal'
+  Author_6:
+    name: S.A.Boctor
+  Author_7:
+    name: 'Robert R. Bitmead'
+  Author_8:
+    name: 'Stuart Bennett'
+  Author_9:
+    name: 'Martin J. Beckman'
+  Author_10:
+    name: 'Carlo Batini'
+  Author_11:
+    name: K.W.Bonfig
+  Author_12:
+    name: 'E.Oran Brigham'
+  Author_13:
+    name: S.P.Bhattacharyya
+  Author_14:
+    name: E.F.Codd
+  Author_15:
+    name: 'Zhong Yuan Chang'
+  Author_16:
+    name: 'Amrik Dhillon'
+  Author_17:
+    name: C.J.Date
+  Author_18:
+    name: B.L.Davies
+  Author_19:
+    name: 'John K. Debenham'
+  Author_20:
+    name: 'Michael J. Denham'
+  Author_21:
+    name: 'Ed. Downs'
+  Author_22:
+    name: 'Tony Dowden'
+  Author_23:
+    name: 'Charles N. Ficher'
+  Author_24:
+    name: 'Ting-Jun Fan'
+  Author_25:
+    name: 'Thomas B. Fomby'
+  Author_26:
+    name: 'Michael J. Folk'
+  Author_27:
+    name: 'Stephen R. Fleeman'
+  Author_28:
+    name: 'Mark Fosseprez'
+  Author_29:
+    name: 'Mikell P. Groover'
+  Author_30:
+    name: 'Gleen M. Glasford'
+  Author_31:
+    name: 'Peter M.D. Gray'
+  Author_32:
+    name: 'A.J.Van De Goor'
+  Author_33:
+    name: 'A. Goscinski'
+  Author_34:
+    name: 'L.A. Geddes'
+  Author_35:
+    name: 'Eric Goles'
+  Author_36:
+    name: 'Jeremy Hinton'
+  Author_37:
+    name: 'J.P.E. Hodgson'
+  Author_38:
+    name: 'Robert M. Haralick'
+  Author_39:
+    name: 'Albert D. Helfrick'
+  Author_40:
+    name: 'Herbert W. Jackson'
+  Author_41:
+    name: 'Wolfgang H. Janco'
+  Author_42:
+    name: 'Ramesh C. Jain'
+  Author_43:
+    name: 'Peter Jackson'
+  Author_44:
+    name: 'Otmar Kilgenstein'
+  Author_45:
+    name: 'Gilbert K. Krulee'
+  Author_46:
+    name: 'Richard D. Klafter'
+  Author_47:
+    name: 'Vipin Kumar'
+  Author_48:
+    name: 'L.V. Kortvelyessy'
+  Author_49:
+    name: 'Tran Tien Lang'
+  Author_50:
+    name: 'C.S.G. Lee'
+  Author_51:
+    name: 'J.C. Latombe'
+  Author_52:
+    name: 'Panos E. Livadas'
+  Author_53:
+    name: 'C.S. George Lee'
+  Author_54:
+    name: 'Yu-Cheng Liu'
+  Author_55:
+    name: G.F.Luger
+  Author_56:
+    name: 'L. Michalski'
+  Author_57:
+    name: 'Greg Michaelson'
+  Author_58:
+    name: 'Gerhard Meyer'
+  Author_59:
+    name: 'Rajiv Methrotra'
+  Author_60:
+    name: 'H.J. Mitchell'
+  Author_61:
+    name: 'Ralph Morrison'
+  Author_62:
+    name: 'Manfred Morari'
+  Author_63:
+    name: 'S. Madhu'
+  Author_64:
+    name: 'Gordon M. Mair'
+  Author_65:
+    name: 'Eduard J. Mccluskey'
+  Author_66:
+    name: 'James W. Mccord'
+  Author_67:
+    name: 'James W. Nilsson'
+  Author_68:
+    name: 'Shimon Y. Nof'
+  Author_69:
+    name: 'Patrick D. T. O''connor'
+  Author_70:
+    name: 'Alan V. Oppenheim'
+  Author_71:
+    name: 'Gustaf Olsson'
+  Author_72:
+    name: 'A.F.P. Van Putten'
+  Author_73:
+    name: 'Ramon Pallas-Areny'
+  Author_74:
+    name: 'Betty Price'
+  Author_75:
+    name: 'A.D. Poularikas'
+  Author_76:
+    name: 'P. Profos'
+  Author_77:
+    name: 'John Roberts'
+  Author_78:
+    name: 'Gordon Russell'
+  Author_79:
+    name: 'C.P. Sandbank'
+  Author_80:
+    name: 'Ken Sander'
+  Author_81:
+    name: 'C.W. De Silva'
+  Author_82:
+    name: 'Ben-Zion Sandler'
+  Author_83:
+    name: 'C.J. Savant.Jr'
+  Author_84:
+    name: 'Harald Schumny'
+  Author_85:
+    name: 'Yoshiaki Shirai'
+  Author_86:
+    name: 'Sidney Soclof'
+  Author_87:
+    name: 'Fred Swainston'
+  Author_88:
+    name: 'W. Schnorrenberg'
+  Author_89:
+    name: 'W. Schmusch'
+  Author_90:
+    name: 'D.P. Siewiorek'
+  Author_91:
+    name: 'R.J. Schilling'
+  Author_92:
+    name: 'Avtar Singh'
+  Author_93:
+    name: 'W.R. Stevens'
+  Author_94:
+    name: 'Michael Tancock'
+  Author_95:
+    name: D.E.Thomas
+  Author_96:
+    name: 'Mike Tooley'
+  Author_97:
+    name: R.D.Tennent
+  Author_98:
+    name: A.S.Tannenbaum
+  Author_99:
+    name: W.A.Triebel
+  Author_100:
+    name: 'Eric Udd'
+  Author_101:
+    name: 'David Vernon'
+  Author_102:
+    name: V.N.Yarmolik
+  Author_103:
+    name: 'Bik Chung Yeung'
+  Author_104:
+    name: 'Franz Zach'
+  Author_105:
+    name: 'Horst Zander'
+  Author_106:
+    name: 'Ian G.Warnock'
+  Author_107:
+    name: 'Jim Williams'
+  Author_108:
+    name: 'Stanley Wolf'
+  Author_109:
+    name: 'David A. Watt'
+  Author_110:
+    name: 'Keigo Watanabe'
+  Author_111:
+    name: 'Mark Allen Wiess'
+  Author_112:
+    name: 'C.D. Watkins'
+  Author_113:
+    name: '***'
