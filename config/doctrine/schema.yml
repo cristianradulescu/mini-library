@@ -1,0 +1,20 @@
+Author:
+  columns:
+    name: { type: string(255), notnull: true }
+
+Publisher:
+  columns:
+    name: { type: string(255), notnull: true }
+
+Book:
+  actAs: { Timestampable: ~ }
+  columns:
+    title: { type: string(255), notnull: true }
+    author_id: { type: integer }
+    publisher_id: { type: integer, notnull: true }
+    isbn: { type: string(255), notnull: true }
+    year: { type: integer, notnull: true }
+  relations:
+    Author: { onDelete: RESTRICT, local: author_id, foreign: id }
+    Publisher: { onDelete: RESTRICT, local: publisher_id, foreign: id }
+
