@@ -1,3 +1,30 @@
+book:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Book
+    module:               book
+    prefix_path:          /book
+    column:               id
+    with_wildcard_routes: true
+
+publisher:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Publisher
+    module:               publisher
+    prefix_path:          /publisher
+    column:               id
+    with_wildcard_routes: true
+
+author:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Author
+    module:               author
+    prefix_path:          /author
+    column:               id
+    with_wildcard_routes: true
+
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
