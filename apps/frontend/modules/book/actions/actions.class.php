@@ -17,6 +17,12 @@ class bookActions extends sfActions
       ->execute();
   }
 
+  public function executeShow(sfWebRequest $request)
+  {
+    $this->book = Doctrine_Core::getTable('Book')->find(array($request->getParameter('id')));
+    $this->forward404Unless($this->book);
+  }
+
   public function executeNew(sfWebRequest $request)
   {
     $this->form = new BookForm();

@@ -11,10 +11,13 @@ Book:
   columns:
     title: { type: string(255), notnull: true }
     author_id: { type: integer }
-    publisher_id: { type: integer, notnull: true }
+    publisher_id: { type: integer }
     isbn: { type: string(255), notnull: true }
     year: { type: integer, notnull: true }
+    description: { type: string(4000) }
+    image: { type: string(255) }
+    rating: { type: float }
   relations:
-    Author: { onDelete: RESTRICT, local: author_id, foreign: id }
-    Publisher: { onDelete: RESTRICT, local: publisher_id, foreign: id }
+    Author: { onDelete: SET NULL, local: author_id, foreign: id }
+    Publisher: { onDelete: SET NULL, local: publisher_id, foreign: id }
 

@@ -10,6 +10,9 @@
  * @property integer $publisher_id
  * @property string $isbn
  * @property integer $year
+ * @property string $description
+ * @property string $image
+ * @property float $rating
  * @property Author $Author
  * @property Publisher $Publisher
  * 
@@ -18,6 +21,9 @@
  * @method integer   getPublisherId()  Returns the current record's "publisher_id" value
  * @method string    getIsbn()         Returns the current record's "isbn" value
  * @method integer   getYear()         Returns the current record's "year" value
+ * @method string    getDescription()  Returns the current record's "description" value
+ * @method string    getImage()        Returns the current record's "image" value
+ * @method float     getRating()       Returns the current record's "rating" value
  * @method Author    getAuthor()       Returns the current record's "Author" value
  * @method Publisher getPublisher()    Returns the current record's "Publisher" value
  * @method Book      setTitle()        Sets the current record's "title" value
@@ -25,6 +31,9 @@
  * @method Book      setPublisherId()  Sets the current record's "publisher_id" value
  * @method Book      setIsbn()         Sets the current record's "isbn" value
  * @method Book      setYear()         Sets the current record's "year" value
+ * @method Book      setDescription()  Sets the current record's "description" value
+ * @method Book      setImage()        Sets the current record's "image" value
+ * @method Book      setRating()       Sets the current record's "rating" value
  * @method Book      setAuthor()       Sets the current record's "Author" value
  * @method Book      setPublisher()    Sets the current record's "Publisher" value
  * 
@@ -48,7 +57,6 @@ abstract class BaseBook extends sfDoctrineRecord
              ));
         $this->hasColumn('publisher_id', 'integer', null, array(
              'type' => 'integer',
-             'notnull' => true,
              ));
         $this->hasColumn('isbn', 'string', 255, array(
              'type' => 'string',
@@ -59,6 +67,17 @@ abstract class BaseBook extends sfDoctrineRecord
              'type' => 'integer',
              'notnull' => true,
              ));
+        $this->hasColumn('description', 'string', 4000, array(
+             'type' => 'string',
+             'length' => 4000,
+             ));
+        $this->hasColumn('image', 'string', 255, array(
+             'type' => 'string',
+             'length' => 255,
+             ));
+        $this->hasColumn('rating', 'float', null, array(
+             'type' => 'float',
+             ));
     }
 
     public function setUp()
@@ -67,12 +86,12 @@ abstract class BaseBook extends sfDoctrineRecord
         $this->hasOne('Author', array(
              'local' => 'author_id',
              'foreign' => 'id',
-             'onDelete' => 'RESTRICT'));
+             'onDelete' => 'SET NULL'));
 
         $this->hasOne('Publisher', array(
              'local' => 'publisher_id',
              'foreign' => 'id',
-             'onDelete' => 'RESTRICT'));
+             'onDelete' => 'SET NULL'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);
