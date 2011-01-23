@@ -12,16 +12,35 @@
     <div id="wrap">
 
       <div class="header">
-        <div class="logo"><a href="index.html"><img src="/images/logo.gif" alt="" title="" border="0" /></a></div>
+        
         <div id="menu">
           <ul>
-            <li><a href="<?php echo url_for('@homepage') ?>">home</a></li>
-            <li class="selected"><a href="<?php echo url_for('book/index') ?>">books</a></li>
+            <li>
+              <img src="/images/icons/house.png" />
+              <a href="<?php echo url_for('@homepage') ?>">home</a>
+            </li>
+            <li class="selected">
+              <img src="/images/icons/book_open.png" />
+              <a href="<?php echo url_for('book/index') ?>">books</a>
+            </li>
           </ul>
         </div>
       </div>
 
       <div class="center_content">
+        
+        <?php if ($sf_user->hasFlash('notice')): ?>
+          <div class="flash_notice">
+            <?php echo $sf_user->getFlash('notice') ?>
+          </div>
+        <?php endif ?>
+
+        <?php if ($sf_user->hasFlash('error')): ?>
+          <div class="flash_error">
+            <?php echo $sf_user->getFlash('error') ?>
+          </div>
+        <?php endif ?>
+
        	<div class="left_content">
 
           <?php echo $sf_content ?>
@@ -29,58 +48,9 @@
           <div class="clear"></div>
         </div><!--end of left content-->
 
-        <div class="right_content">
-
-          <div class="title"><span class="title_icon"><img src="/images/bullet3.gif" alt="" title="" /></span>About Our Store</div>
-          <div class="about">
-            <p>
-              <img src="/images/about.gif" alt="" title="" class="right" />
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-            </p>
-
-          </div>
-
-          <div class="right_box">
-
-            <div class="title"><span class="title_icon"><img src="/images/bullet5.gif" alt="" title="" /></span>Publishers</div>
-
-            <ul class="list">
-              <li><a href="#">accesories</a></li>
-              <li><a href="#">books gifts</a></li>
-              <li><a href="#">specials</a></li>
-              <li><a href="#">hollidays gifts</a></li>
-              <li><a href="#">accesories</a></li>
-              <li><a href="#">books gifts</a></li>
-              <li><a href="#">specials</a></li>
-              <li><a href="#">hollidays gifts</a></li>
-              <li><a href="#">accesories</a></li>
-              <li><a href="#">books gifts</a></li>
-              <li><a href="#">specials</a></li>
-            </ul>
-          </div>
-
-          <div class="right_box">
-            <div class="title"><span class="title_icon"><img src="/images/bullet6.gif" alt="" title="" /></span>Authors</div>
-
-            <ul class="list">
-              <li><a href="#">accesories</a></li>
-              <li><a href="#">books gifts</a></li>
-              <li><a href="#">specials</a></li>
-              <li><a href="#">hollidays gifts</a></li>
-              <li><a href="#">accesories</a></li>
-              <li><a href="#">books gifts</a></li>
-              <li><a href="#">specials</a></li>
-              <li><a href="#">hollidays gifts</a></li>
-              <li><a href="#">accesories</a></li>
-            </ul>
-
-          </div>
-
-
-        </div><!--end of right content-->
-
-
-
+        <!--start right content-->
+        <?php include_component('sidebar', 'sidebar') ?>
+        <!--end of right content-->
 
         <div class="clear"></div>
       </div><!--end of center content-->

@@ -16,8 +16,13 @@ Book:
     year: { type: integer, notnull: true }
     description: { type: string(4000) }
     image: { type: string(255) }
-    rating: { type: float }
   relations:
     Author: { onDelete: SET NULL, local: author_id, foreign: id }
     Publisher: { onDelete: SET NULL, local: publisher_id, foreign: id }
 
+Rating:
+  columns:
+    book_id: { type: integer, notnull: true}
+    value: { type: integer, notnull: true}
+  relations:
+    Book: { onDelete: CASCADE, local: book_id, foreign: id }

@@ -12,4 +12,8 @@
  */
 class Publisher extends BasePublisher
 {
+  public function getBooksCount()
+  {
+    return BookTable::getInstance()->createQuery('b')->addWhere('b.publisher_id = ?', $this->getId())->count();
+  }
 }

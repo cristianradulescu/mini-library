@@ -56,17 +56,17 @@
         </td>
       </tr>
       <tr>
-        <th><?php echo $form['created_at']->renderLabel() ?></th>
+        <th><?php echo $form['description']->renderLabel() ?></th>
         <td>
-          <?php echo $form['created_at']->renderError() ?>
-          <?php echo $form['created_at'] ?>
+          <?php echo $form['description']->renderError() ?>
+          <?php echo $form['description'] ?>
         </td>
       </tr>
       <tr>
-        <th><?php echo $form['updated_at']->renderLabel() ?></th>
+        <th><?php echo $form['image']->renderLabel() ?></th>
         <td>
-          <?php echo $form['updated_at']->renderError() ?>
-          <?php echo $form['updated_at'] ?>
+          <?php echo $form['image']->renderError() ?>
+          <?php echo $form['image'] ?>
         </td>
       </tr>
     </tbody>

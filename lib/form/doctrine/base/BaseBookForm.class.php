@@ -23,7 +23,6 @@ abstract class BaseBookForm extends BaseFormDoctrine
       'year'         => new sfWidgetFormInputText(),
       'description'  => new sfWidgetFormTextarea(),
       'image'        => new sfWidgetFormInputText(),
-      'rating'       => new sfWidgetFormInputText(),
       'created_at'   => new sfWidgetFormDateTime(),
       'updated_at'   => new sfWidgetFormDateTime(),
     ));
@@ -37,7 +36,6 @@ abstract class BaseBookForm extends BaseFormDoctrine
       'year'         => new sfValidatorInteger(),
       'description'  => new sfValidatorString(array('max_length' => 4000, 'required' => false)),
       'image'        => new sfValidatorString(array('max_length' => 255, 'required' => false)),
-      'rating'       => new sfValidatorNumber(array('required' => false)),
       'created_at'   => new sfValidatorDateTime(),
       'updated_at'   => new sfValidatorDateTime(),
     ));

@@ -816,6 +816,8 @@ Book:
     Publisher: Publisher_4
     isbn: 0-13-81257-5
     year: '1991'
+    image: book_93
+    description: "Comprehensive coverage of both 16 and 32 bit micros. Concentrates on both Intel and Motorola family of Micros. Integrates hardware and software concepts. Extensive end of chapter problems."
     created_at: '2011-01-16 23:29:22'
     updated_at: '2011-01-16 23:29:22'
   Book_94:

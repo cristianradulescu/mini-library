@@ -12,9 +12,9 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css, frontend.css]
+  stylesheets:    [main.css, frontend.css, ../js/jquery/jquery.rating.css]
 
-  javascripts:    []
+  javascripts:    [http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js, jquery/jquery.metadata.js, jquery/jquery.form.js, jquery/jquery.rating.pack.js]
 
   has_layout:     true
   layout:         layout

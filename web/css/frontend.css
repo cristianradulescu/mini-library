@@ -15,7 +15,6 @@ a{
 p{
   padding:5px 0 5px 0;
   margin:0px;
-  text-align:justify;
   line-height:19px;
 }
 p.details{
@@ -44,14 +43,11 @@ p.more_details{
   height:181px;
   background:url(/images/header.jpg) no-repeat center;
 }
-.logo{
-  padding:50px 0 0 130px;
-}
 /*-----------------------------menu-------------------*/
 #menu{
   width:628px;
   height:30px;
-  padding:55px 0 0 10px;
+  padding:145px 0 0 10px;
 }
 #menu ul{
   display:block;
@@ -68,30 +64,28 @@ p.more_details{
 #menu ul li a{
   height:27px;
   display:block;
-  padding:0px 10px 0 10px;
-  margin:0 4px 0 4px;
+  padding:0px 10px 0 0;
+  margin:0 4px 0 0;
   _margin:0 2px 0 2px;
   float:left;
   text-decoration:none;
   text-align:center;
   color:#fff;
   font-size:13px;
+  font-weight: bold;
   line-height:25px;
 }
 #menu ul li.selected a{
-  height:27px;
-  display:block;
-  padding:0px 10px 0 10px;
-  margin:0 5px 0 5px;
-  float:left;
-  text-decoration:none;
-  text-align:center;
   color:#f7a849;
-  font-size:13px;
-  line-height:25px;
 }
 #menu ul li a:hover{
   color:#f7a849;
+}
+
+#menu ul li img{
+  float: left;
+  display:block;
+  margin: 4px 2px 0 0;
 }
 /*----------------crumb_nav------------------*/
 .crumb_nav{
@@ -141,13 +135,13 @@ span.title_icon{
   padding:0 5px 0 0;
 }
 .prod_title{
-  color:#f8981d;
+  color: #a53d17;
   padding:5px 0 0 15px;
   font-size:13px;
 }
 a.more{
   font-style:italic;
-  color:#f8981d;
+  color:#a53d17;
   float:right;
   text-decoration:none;
   font-size:11px;
