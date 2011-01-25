@@ -1,6 +1,10 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+filter_books_by_author:
+  url: /book/author/:author_id
+  param: {module: book, action: showBooksByAuthor }
+
 # default rules
 homepage:
   url:   /

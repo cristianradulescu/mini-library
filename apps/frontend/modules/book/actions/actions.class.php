@@ -13,8 +13,8 @@ class bookActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
     $q = Doctrine_Core::getTable('Book')
-      ->createQuery('b')
-      ->addOrderBy('b.title');
+      ->createQuery()
+      ->addOrderBy('title');
 
     $this->pager = new sfDoctrinePager('Book', sfConfig::get('app_book_list_max_per_page'));
     $this->pager->setQuery($q);
@@ -27,6 +27,33 @@ class bookActions extends sfActions
     $this->book = Doctrine_Core::getTable('Book')->find(array($request->getParameter('id')));
     $this->forward404Unless($this->book);
   }
+
+  public function executeShowBooksByAuthor(sfWebRequest $request)
+  {
+    $author_id = $request->getParameter('author_id');
+    $author = AuthorTable::getInstance()->findOneById($author_id);
+
+    if (!$author)
+    {
+      $this->getUser()->setFlash('error', 'Author not found');
+      $this->redirect('book/index');
+    }
+
+    $this->getUser()->setFlash('notice', 'Displaying books for author '.$author->getName());
+
+    $q = Doctrine_Core::getTable('Book')
+      ->createQuery()
+      ->addWhere('author_id = ?', $author_id)
+      ->addOrderBy('title');
+
+    $this->pager = new sfDoctrinePager('Book', sfConfig::get('app_book_list_max_per_page'));
+    $this->pager->setQuery($q);
+    $this->pager->setPage($request->getParameter('page', 1));
+    $this->pager->init();
+
+    $this->setTemplate('index');
+  }
+
 
 //  public function executeNew(sfWebRequest $request)
 //  {

@@ -30,7 +30,11 @@
 
     <ul class="list">
       <?php foreach ($authors as $author): ?>
-        <li><a href="#"><?php echo $author->getName() ?></a> (<?php echo $author->getBooksCount() ?>)</li>
+        <li>
+          <a href="<?php echo url_for2('filter_books_by_author', array('author_id' => $author->getId()))?>">
+            <?php echo $author->getName() ?>
+          </a> (<?php echo $author->getBooksCount() ?>)
+        </li>
       <?php endforeach ?>
     </ul>
 

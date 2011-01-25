@@ -2,7 +2,7 @@ body {
   background-color:#6F605A;
   font-family:Arial, Helvetica, sans-serif;
   padding:0;
-  font-size:12px;
+  font-size:14px;
   margin:0px auto auto auto;
   color:#000000;
 }
@@ -19,17 +19,17 @@ p{
 }
 p.details{
   padding:5px 15px 5px 15px;
-  font-size:11px;
+  font-size:13px;
 }
 p.details_cart{
   clear:both;
   padding:25px 30px 5px 0px;
-  font-size:11px;
+  font-size:13px;
   font-style:italic;
 }
 p.more_details{
   padding:25px 20px 0px 20px;
-  font-size:11px;
+  font-size:12px;
 
 }
 #wrap{
@@ -137,14 +137,14 @@ span.title_icon{
 .prod_title{
   color: #a53d17;
   padding:5px 0 0 15px;
-  font-size:13px;
+  font-size:16px;
 }
 a.more{
   font-style:italic;
   color:#a53d17;
   float:right;
   text-decoration:none;
-  font-size:11px;
+  font-size:12px;
   padding:0px 15px 0 0 ;
 }
 .about{
@@ -467,7 +467,7 @@ a.continue{
   text-align:center;
   padding:0 7px 0 7px;
   color:#FFFFFF;
-  font-size:11px;
+  font-size:12px;
   line-height:20px;
 }
 /*--------------cart_table-------------*/
@@ -498,7 +498,7 @@ div.pagination {
   text-align:center;
   float:left;
   clear:both;
-  font-size:10px;
+  font-size:12px;
 }
 
 div.pagination a {
@@ -547,3 +547,17 @@ div.pagination span.disabled {
   color:#afaeaf;
 }
 
+/*------------notice and error------------------*/
+div.flash_notice {
+  color: green;
+  border: 1px solid green;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.flash_error {
+  color: red;
+  border: 1px solid red;
+  padding: 5px;
+  margin-right: 15px;
+}
