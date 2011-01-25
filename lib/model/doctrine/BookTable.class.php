@@ -27,8 +27,8 @@ class BookTable extends Doctrine_Table
   public function retrieveAdminBookList(Doctrine_Query $q)
   {
     $rootAlias = $q->getRootAlias();
-    $q->leftJoin($rootAlias . '.Author a');
-    $q->leftJoin($rootAlias . '.Publisher p');
+    $q->leftJoin($rootAlias.'.Author a');
+    $q->leftJoin($rootAlias.'.Publisher p');
 
     return $q;
   }

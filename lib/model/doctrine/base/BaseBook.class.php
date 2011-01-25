@@ -14,28 +14,25 @@
  * @property string $image
  * @property Author $Author
  * @property Publisher $Publisher
- * @property Doctrine_Collection $Rating
  * 
- * @method string              getTitle()        Returns the current record's "title" value
- * @method integer             getAuthorId()     Returns the current record's "author_id" value
- * @method integer             getPublisherId()  Returns the current record's "publisher_id" value
- * @method string              getIsbn()         Returns the current record's "isbn" value
- * @method integer             getYear()         Returns the current record's "year" value
- * @method string              getDescription()  Returns the current record's "description" value
- * @method string              getImage()        Returns the current record's "image" value
- * @method Author              getAuthor()       Returns the current record's "Author" value
- * @method Publisher           getPublisher()    Returns the current record's "Publisher" value
- * @method Doctrine_Collection getRating()       Returns the current record's "Rating" collection
- * @method Book                setTitle()        Sets the current record's "title" value
- * @method Book                setAuthorId()     Sets the current record's "author_id" value
- * @method Book                setPublisherId()  Sets the current record's "publisher_id" value
- * @method Book                setIsbn()         Sets the current record's "isbn" value
- * @method Book                setYear()         Sets the current record's "year" value
- * @method Book                setDescription()  Sets the current record's "description" value
- * @method Book                setImage()        Sets the current record's "image" value
- * @method Book                setAuthor()       Sets the current record's "Author" value
- * @method Book                setPublisher()    Sets the current record's "Publisher" value
- * @method Book                setRating()       Sets the current record's "Rating" collection
+ * @method string    getTitle()        Returns the current record's "title" value
+ * @method integer   getAuthorId()     Returns the current record's "author_id" value
+ * @method integer   getPublisherId()  Returns the current record's "publisher_id" value
+ * @method string    getIsbn()         Returns the current record's "isbn" value
+ * @method integer   getYear()         Returns the current record's "year" value
+ * @method string    getDescription()  Returns the current record's "description" value
+ * @method string    getImage()        Returns the current record's "image" value
+ * @method Author    getAuthor()       Returns the current record's "Author" value
+ * @method Publisher getPublisher()    Returns the current record's "Publisher" value
+ * @method Book      setTitle()        Sets the current record's "title" value
+ * @method Book      setAuthorId()     Sets the current record's "author_id" value
+ * @method Book      setPublisherId()  Sets the current record's "publisher_id" value
+ * @method Book      setIsbn()         Sets the current record's "isbn" value
+ * @method Book      setYear()         Sets the current record's "year" value
+ * @method Book      setDescription()  Sets the current record's "description" value
+ * @method Book      setImage()        Sets the current record's "image" value
+ * @method Book      setAuthor()       Sets the current record's "Author" value
+ * @method Book      setPublisher()    Sets the current record's "Publisher" value
  * 
  * @package    minilib
  * @subpackage model
@@ -89,10 +86,6 @@ abstract class BaseBook extends sfDoctrineRecord
              'local' => 'publisher_id',
              'foreign' => 'id',
              'onDelete' => 'SET NULL'));
-
-        $this->hasMany('Rating', array(
-             'local' => 'id',
-             'foreign' => 'book_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);

@@ -33,23 +33,6 @@
       <p class="details"><?php echo $book->getYear() ?></p>
       <div class="clear"></div>
 
-      <div class="prod_title">Rating</div>
-      <p class="details">
-        <form>
-        <?php for ($i = 1; $i <= 5; $i++): ?>
-           <input name="star" type="radio" class="auto-submit-star"<?php echo $i == $book->getRatingAverage() ? ' checked="checked"' : '' ?> />
-        <?php endfor ?>
-        (<?php echo count($book->getRating()) ?> votes)
-        </form>
-        <script type="text/javascript">
-          $('.auto-submit-star').rating({
-            callback: function(value, link){
-              alert(value);
-            }
-          });
-        </script>
-      </p>
-      <div class="clear"></div>
     </div>
     <div class="box_bottom"></div>
   </div>

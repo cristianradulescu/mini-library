@@ -12,27 +12,5 @@
  */
 class Book extends BaseBook
 {
-  /**
-   * Calculate rating average based on numebr of votes
-   *
-   * @return int
-   */
-  public function getRatingAverage()
-  {
-    $ratings = $this->getRating();
-    if (count($ratings) == 0)
-    {
-      return 0;
-    }
-    
-    $values = 0;
-
-    foreach ($ratings as $rating)
-    {
-      /* @var $rating Rating */
-      $values += $rating->getValue();
-    }
-
-    return floor($values / count($ratings));
-  }
+  
 }
