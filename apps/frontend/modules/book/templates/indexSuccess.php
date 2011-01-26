@@ -14,7 +14,11 @@
     <div class="prod_det_box">
       <div class="box_top"></div>
       <div class="box_center">
-        <div class="prod_title"><?php echo $book->getTitle() ?></div>
+        <div class="prod_title">
+          <a href="<?php echo url_for('book/show?id='.$book->getId()) ?>">
+            <?php echo $book->getTitle() ?>
+          </a>
+        </div>
         <p class="details"><?php echo $book->getDescription() ?></p>
         <a href="<?php echo url_for('book/show?id='.$book->getId()) ?>" class="more">- more details -</a>
         <div class="clear"></div>
