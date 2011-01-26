@@ -17,7 +17,11 @@
 
     <ul class="list">
       <?php foreach ($publishers as $publisher): ?>
-        <li><a href="#"><?php echo $publisher->getName() ?></a> (<?php echo $publisher->getBooksCount() ?>)</li>
+        <li>
+          <a href="<?php echo url_for2('filter_books_by_publisher', array('publisher_id' => $publisher->getId()))?>">
+            <?php echo $publisher->getName() ?>
+          </a> (<?php echo $publisher->getBooksCount() ?>)
+        </li>
       <?php endforeach ?>
     </ul>
   </div>
