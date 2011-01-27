@@ -1,13 +1,17 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+search:
+  url: /book/search/
+  param: { module: book, action: search }
+
 filter_books_by_author:
   url: /book/author/:author_id
-  param: {module: book, action: showBooksByAuthor }
+  param: { module: book, action: showBooksByAuthor }
 
 filter_books_by_publisher:
   url: /book/publisher/:publisher_id
-  param: {module: book, action: showBooksByPublisher }
+  param: { module: book, action: showBooksByPublisher }
 
 # default rules
 homepage:

@@ -1,14 +1,5 @@
 <div class="right_content">
-  <div class="title">
-    <span class="title_icon"><img src="/images/bullet3.gif" alt="" title="" /></span>
-    About Our Store
-  </div>
-  <div class="about">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-    </p>
-  </div>
-
+  <?php include_component('book', 'searchBox') ?>
   <div class="right_box">
     <div class="title">
       <span class="title_icon"><img src="/images/bullet5.gif" alt="" title="" /></span>
