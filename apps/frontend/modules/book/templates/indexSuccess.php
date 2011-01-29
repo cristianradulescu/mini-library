@@ -31,8 +31,8 @@
 <?php if ($pager->haveToPaginate()): ?>
 <div class="pagination">
   <p>
-    <span class="current"><?php echo count($pager) ?> books</span>
-    <span class="current">page <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></span>
+    <span class="current"><?php echo count($pager) ?> <?php echo __('books') ?></span>
+    <span class="current"><?php echo __('page') ?> <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></span>
   </p><p>&nbsp;</p>
 
   <?php if (1 == $pager->getPage()): ?>

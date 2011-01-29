@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="ro" datatype="plaintext" original="messages" date="2011-01-29T23:20:15Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>books list</source>
+        <target>listă cărți</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>home</source>
+        <target>prima pagină</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Publishers</source>
+        <target>Edituri</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Authors</source>
+        <target>Autori</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Author not found</source>
+        <target>Autorul nu a fost găsit</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Publisher not found</source>
+        <target>Editura nu a fost găsita</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Search books</source>
+        <target>Caută cărți</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>search</source>
+        <target>caută</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Books</source>
+        <target>Cărți</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>more details</source>
+        <target>mai multe detalii</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Description</source>
+        <target>Descriere</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Author</source>
+        <target>Autor</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Publisher</source>
+        <target>Editura</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>ISBN</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Year</source>
+        <target>Anul</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>books</source>
+        <target>cărți</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>page</source>
+        <target>pagina</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
