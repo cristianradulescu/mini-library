@@ -15,13 +15,9 @@
         
         <div id="menu">
           <ul>
-            <li>
-              <img src="/images/icons/house.png" />
-              <a href="<?php echo url_for('@homepage') ?>">home</a>
-            </li>
             <li class="selected">
               <img src="/images/icons/book_open.png" />
-              <a href="<?php echo url_for('book/index') ?>">books</a>
+              <a href="<?php echo url_for('book/index') ?>"><?php echo __('books list') ?></a>
             </li>
           </ul>
         </div>
@@ -55,14 +51,8 @@
 
 
       <div class="footer">
-       	<div class="left_footer"><img src="/images/footer_logo.gif" alt="" title="" /><br /> <a href="http://csscreme.com"><img src="/images/csscreme.gif" alt="by csscreme.com" title="by csscreme.com" border="0" /></a></div>
         <div class="right_footer">
-          <a href="#">home</a>
-          <a href="#">about us</a>
-          <a href="#">services</a>
-          <a href="#">privacy policy</a>
-          <a href="#">contact us</a>
-
+          <a href="<?php echo url_for('@homepage') ?>"><?php echo __('home') ?></a>
         </div>
 
 

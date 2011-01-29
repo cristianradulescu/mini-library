@@ -33,3 +33,9 @@ all:
 
     # Enable the database manager
     use_database:           true
+
+    # Culture
+    default_culture: ro_RO
+    charset: utf-8
+    i18n: true
+    standard_helpers: [Partial, Cache, I18N]

@@ -12,23 +12,23 @@
   <div class="prod_det_box">
     <div class="box_top"></div>
     <div class="box_center">
-      <div class="prod_title">Description</div>
+      <div class="prod_title"><?php echo __('Description') ?></div>
       <p class="details"><?php echo $book->getRaw('description') ?></p>
       <div class="separator"></div><div class="clear"></div>
 
-      <div class="prod_title">Author</div>
+      <div class="prod_title"><?php echo __('Author') ?></div>
       <p class="details"><?php echo $book->getAuthor() ?></p>
       <div class="separator"></div><div class="clear"></div>
 
-      <div class="prod_title">Publisher</div>
+      <div class="prod_title"><?php echo __('Publisher') ?></div>
       <p class="details"><?php echo $book->getPublisher() ?></p>
       <div class="separator"></div><div class="clear"></div>
 
-      <div class="prod_title">ISBN</div>
+      <div class="prod_title"><?php echo __('ISBN') ?></div>
       <p class="details"><?php echo $book->getIsbn() ?></p>
       <div class="separator"></div><div class="clear"></div>
 
-      <div class="prod_title">Year</div>
+      <div class="prod_title"><?php echo __('Year') ?></div>
       <p class="details"><?php echo $book->getYear() ?></p>
       <div class="clear"></div>
 

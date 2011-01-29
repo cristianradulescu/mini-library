@@ -1,6 +1,6 @@
 <div class="title">
   <span class="title_icon"><img src="/images/bullet3.gif" alt="" title=""></span>
-  Books
+  <?php echo __('Books') ?>
 </div>
 
 <?php foreach ($pager->getResults() as $book): ?>
@@ -19,7 +19,7 @@
           </a>
         </div>
         <p class="details"><?php echo substr(strip_tags($book->getRaw('description')), 0, 100) ?>...</p>
-        <a href="<?php echo url_for('book/show?id='.$book->getId()) ?>" class="more">- more details -</a>
+        <a href="<?php echo url_for('book/show?id='.$book->getId()) ?>" class="more">- <?php echo __('more details') ?> -</a>
         <div class="clear"></div>
       </div>
       <div class="box_bottom"></div>
@@ -30,12 +30,10 @@
 
 <?php if ($pager->haveToPaginate()): ?>
 <div class="pagination">
-  <?php if ($pager->haveToPaginate()): ?>
-    <p>
-      <span class="current"><?php echo count($pager) ?> books</span>
-      <span class="current">page <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></span>
-    </p><p>&nbsp;</p>
-  <?php endif; ?>
+  <p>
+    <span class="current"><?php echo count($pager) ?> books</span>
+    <span class="current">page <?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></span>
+  </p><p>&nbsp;</p>
 
   <?php if (1 == $pager->getPage()): ?>
     <span class="disabled">&lt;&lt;</span>

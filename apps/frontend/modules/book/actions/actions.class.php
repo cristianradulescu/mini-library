@@ -51,16 +51,15 @@ class bookActions extends sfActions
    */
   public function executeShowBooksByAuthor(sfWebRequest $request)
   {
+    $i18n = $this->getContext()->getI18N();
     $author_id = $request->getParameter('author_id');
     $author = AuthorTable::getInstance()->findOneById($author_id);
 
     if (!$author)
     {
-      $this->getUser()->setFlash('error', 'Author not found');
+      $this->getUser()->setFlash('error', $i18n->__('Author not found'));
       $this->redirect('book/index');
     }
-
-    $this->getUser()->setFlash('notice', 'Displaying books for author '.$author->getName());
 
     $q = Doctrine_Core::getTable('Book')
       ->createQuery()
@@ -84,16 +83,15 @@ class bookActions extends sfActions
    */
   public function executeShowBooksByPublisher(sfWebRequest $request)
   {
+    $i18n = $this->getContext()->getI18N();
     $publisher_id = $request->getParameter('publisher_id');
     $publisher = PublisherTable::getInstance()->findOneById($publisher_id);
 
     if (!$publisher)
     {
-      $this->getUser()->setFlash('error', 'Publisher not found');
+      $this->getUser()->setFlash('error', $i18n->__('Publisher not found'));
       $this->redirect('book/index');
     }
-
-    $this->getUser()->setFlash('notice', 'Displaying books for publisher '.$publisher->getName());
 
     $q = Doctrine_Core::getTable('Book')
       ->createQuery()

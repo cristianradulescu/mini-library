@@ -3,7 +3,7 @@
   <div class="right_box">
     <div class="title">
       <span class="title_icon"><img src="/images/bullet5.gif" alt="" title="" /></span>
-      Publishers
+      <?php echo __('Publishers') ?>
     </div>
 
     <ul class="list">
@@ -20,7 +20,7 @@
   <div class="right_box">
     <div class="title">
       <span class="title_icon"><img src="/images/bullet6.gif" alt="" title="" /></span>
-      Authors
+      <?php echo __('Authors') ?>
     </div>
 
     <ul class="list">
@@ -32,8 +32,5 @@
         </li>
       <?php endforeach ?>
     </ul>
-
   </div>
-
-
 </div>
