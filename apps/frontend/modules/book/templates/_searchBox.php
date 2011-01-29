@@ -5,7 +5,8 @@
 <div>
   <form name="register" action="<?php echo url_for('@search') ?>">
     <div class="form_row">
-      <input type="text" class="contact_input" name="q">
+<!--      <input type="text" class="contact_input" name="q">-->
+      <?php echo $form['q']->render() ?>
       <input type="submit" class="register" value="search">
     </div>
   </form>

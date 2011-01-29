@@ -14,7 +14,7 @@ default:
 
   stylesheets:    [main.css, admin.css]
 
-  javascripts:    []
+  javascripts:    [jquery/jquery-1.4.4.min.js, tiny_mce/tiny_mce.js]
 
   has_layout:     true
   layout:         layout

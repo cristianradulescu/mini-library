@@ -12,5 +12,14 @@ class BookForm extends BaseBookForm
 {
   public function configure()
   {
+    unset($this['created_at'], $this['updated_at']);
+
+    $tiny_mce_config = array(
+        'width'  => 600,
+        'height' => 250,
+        'config' => 'relative_urls: false'
+    );
+
+    $this->widgetSchema['description'] = new sfWidgetFormTextareaTinyMCE($tiny_mce_config);
   }
 }

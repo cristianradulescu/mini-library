@@ -14,20 +14,20 @@
     <div class="box_top"></div>
     <div class="box_center">
       <div class="prod_title">Description</div>
-      <p class="details"><?php echo $book->getDescription() ?></p>
-      <div class="clear"></div>
+      <p class="details"><?php echo $book->getRaw('description') ?></p>
+      <div class="separator"></div><div class="clear"></div>
 
       <div class="prod_title">Author</div>
       <p class="details"><?php echo $book->getAuthor() ?></p>
-      <div class="clear"></div>
+      <div class="separator"></div><div class="clear"></div>
 
       <div class="prod_title">Publisher</div>
       <p class="details"><?php echo $book->getPublisher() ?></p>
-      <div class="clear"></div>
+      <div class="separator"></div><div class="clear"></div>
 
       <div class="prod_title">ISBN</div>
       <p class="details"><?php echo $book->getIsbn() ?></p>
-      <div class="clear"></div>
+      <div class="separator"></div><div class="clear"></div>
 
       <div class="prod_title">Year</div>
       <p class="details"><?php echo $book->getYear() ?></p>

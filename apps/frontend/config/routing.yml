@@ -5,6 +5,10 @@ search:
   url: /book/search/
   param: { module: book, action: search }
 
+search_autocompleter:
+  url: /book/search_autocompleter/
+  param: { module: book, action: searchAutocompleter }
+
 filter_books_by_author:
   url: /book/author/:author_id
   param: { module: book, action: showBooksByAuthor }

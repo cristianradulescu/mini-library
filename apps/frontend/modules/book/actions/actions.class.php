@@ -119,15 +119,14 @@ class bookActions extends sfActions
   {
     $search_param = $request->getParameter('q');
 
-    if (!ctype_alnum($search_param))
+    if (is_numeric($search_param) && BookTable::getInstance()->findOneById($search_param))
     {
-      $this->getUser()->setFlash('error', 'Invalid search query');
-      $this->redirect('book/index');
+      $this->redirect('book/show?id='.$search_param);
     }
 
     $q = Doctrine_Core::getTable('Book')
       ->createQuery()
-      ->addWhere('title like "%'.$search_param.'%"')
+      ->addWhere('title like "%'.htmlentities($search_param).'%"')
       ->addOrderBy('title');
 
     $this->pager = new sfDoctrinePager('Book', sfConfig::get('app_book_list_max_per_page'));
@@ -136,5 +135,33 @@ class bookActions extends sfActions
     $this->pager->init();
 
     $this->setTemplate('index');
+  }
+
+  /**
+   * Provide autocomplete for search
+   *
+   * @param sfWebRequest $request
+   * 
+   * @return string
+   */
+  public function executeSearchAutocompleter(sfWebRequest $request)
+  {
+    $search_param = htmlentities($request->getParameter('q'));
+
+    $this->getResponse()->setContentType('application/json');
+
+    $books = Doctrine_Core::getTable('Book')
+              ->createQuery()
+              ->addWhere('title like "%'.$search_param.'%"')
+              ->addOrderBy('title')
+              ->execute();
+
+    $autocompleter = array();
+    foreach ($books as $book)
+    {
+      $autocompleter[$book->getId()] = (string) $book;
+    }
+
+    return $this->renderText(json_encode($autocompleter));
   }
 }

@@ -16,5 +16,6 @@ class bookComponents extends sfComponents
   */
   public function executeSearchBox(sfWebRequest $request)
   {
+    $this->form = new SearchForm();
   }
 }

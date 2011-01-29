@@ -17,7 +17,7 @@ p{
   margin:0px;
   line-height:19px;
 }
-p.details{
+p.details, div.box_center p {
   padding:5px 15px 5px 15px;
   font-size:13px;
 }
@@ -32,6 +32,13 @@ p.more_details{
   font-size:12px;
 
 }
+
+div.separator {
+  border-bottom: 1px #B2B2B2 dashed;
+  width: 95%;
+  margin: 0 auto;
+}
+
 #wrap{
   width:900px;
   height: auto;

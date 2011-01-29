@@ -12,9 +12,9 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css, frontend.css]
+  stylesheets:    [main.css, frontend.css, ../sfFormExtraPlugin/css/jquery.autocompleter.css]
 
-  javascripts:    [jquery/jquery-1.4.4.min.js]
+  javascripts:    [jquery/jquery-1.4.4.min.js, ../sfFormExtraPlugin/js/jquery.autocompleter.js]
 
   has_layout:     true
   layout:         layout

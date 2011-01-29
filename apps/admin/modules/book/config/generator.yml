@@ -17,12 +17,12 @@ generator:
         isbn:  { label: ISBN }
       list:
         table_method: retrieveAdminBookList
-        display: [id, =title, author, publisher, isbn, year]
+        display: [id, =title, author, publisher]
         max_per_page: 10
       filter:
         display: [id, title, author_id, publisher_id, isbn, year]
       form:    ~
       edit:
-        display: [id, title, author_id, publisher_id, isbn, year]
+        display: [id, title, author_id, publisher_id, description, isbn, year]
       new:
-        display: [id, title, author_id, publisher_id, isbn, year]
+        display: [id, title, author_id, publisher_id, description, isbn, year]

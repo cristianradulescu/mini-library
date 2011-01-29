@@ -19,7 +19,7 @@
             <?php echo $book->getTitle() ?>
           </a>
         </div>
-        <p class="details"><?php echo $book->getDescription() ?></p>
+        <p class="details"><?php echo substr(strip_tags($book->getRaw('description')), 0, 100) ?>...</p>
         <a href="<?php echo url_for('book/show?id='.$book->getId()) ?>" class="more">- more details -</a>
         <div class="clear"></div>
       </div>
