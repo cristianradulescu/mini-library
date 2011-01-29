@@ -12,9 +12,9 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css, frontend.css, ../sfFormExtraPlugin/css/jquery.autocompleter.css]
+  stylesheets:    [main.css, frontend.css, ../sfFormExtraPlugin/css/jquery.autocompleter.css, ../js/jquery/fancybox/jquery.fancybox-1.3.4.css]
 
-  javascripts:    [jquery/jquery-1.4.4.min.js, ../sfFormExtraPlugin/js/jquery.autocompleter.js]
+  javascripts:    [jquery/jquery-1.4.4.min.js, main.js, ../sfFormExtraPlugin/js/jquery.autocompleter.js, jquery/fancybox/jquery.fancybox-1.3.4.pack.js, jquery/fancybox/jquery.easing-1.3.pack.js, jquery/fancybox/jquery.mousewheel-3.0.4.pack.js]
 
   has_layout:     true
   layout:         layout

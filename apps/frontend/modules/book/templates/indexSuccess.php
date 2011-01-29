@@ -6,7 +6,7 @@
 <?php foreach ($pager->getResults() as $book): ?>
   <div class="feat_prod_box">
     <div class="prod_img">
-      <a href="<?php echo url_for('book/show?id='.$book->getId()) ?>">
+      <a class="fancy_book_image" href="<?php MinilibImage::getInstance($book->getImage())->renderImageSrc() ?>">
         <img src="<?php MinilibImage::getInstance($book->getImage())->renderThumbnailSrc() ?>" width="98" height="150" alt="" title="" border="0">
       </a>
     </div>
