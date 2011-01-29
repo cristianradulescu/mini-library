@@ -6,8 +6,7 @@
 <div class="feat_prod_box">
   <div class="prod_img">
     <a href="<?php echo url_for('book/show?id='.$book->getId()) ?>">
-      <?php $image_name = $book->getImage() ? $book->getImage() : 'not_available' ?>
-      <img src="<?php MinilibImage::getInstance($image_name)->getBase64ThumbnailSrc() ?>" width="98" height="150" alt="" title="" border="0">
+      <img src="<?php MinilibImage::getInstance($book->getImage())->renderThumbnailSrc() ?>" width="98" height="150" alt="" title="" border="0">
     </a>
   </div>
   <div class="prod_det_box">

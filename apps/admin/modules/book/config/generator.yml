@@ -23,6 +23,6 @@ generator:
         display: [id, title, author_id, publisher_id, isbn, year]
       form:    ~
       edit:
-        display: [id, title, author_id, publisher_id, description, isbn, year]
+        display: [id, title, author_id, publisher_id, description, image, isbn, year]
       new:
-        display: [id, title, author_id, publisher_id, description, isbn, year]
+        display: [id, title, author_id, publisher_id, description, inage, isbn, year]

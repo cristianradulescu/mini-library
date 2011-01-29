@@ -4,6 +4,8 @@
 # default values
 all:
   # book image data
-  images_path: "<?php echo sfConfig::get('sf_data_dir').'/books/images/' ?>"
-  thumbnails_path: "<?php echo sfConfig::get('sf_data_dir').'/books/thumbnails/'; ?>"
+  images_relative_path: "/uploads/books/images/"
+  thumbnails_relative_path: "/uploads/books/thumbnails/"
   image_file_type: "png"
+  images_path: "<?php echo sfConfig::get('sf_upload_dir').'/books/images/' ?>"
+  thumbnails_path: "<?php echo sfConfig::get('sf_upload_dir').'/books/thumbnails/' ?>"

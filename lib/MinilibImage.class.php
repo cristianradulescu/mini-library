@@ -26,6 +26,11 @@ class MinilibImage
   private $thumbnail_file_name;
 
   /**
+   * "not available" image file name
+   */
+  const NOT_AVAILABLE = 'not_available.png';
+
+  /**
    * Initialize paths
    *
    * @param string $img_name
@@ -34,11 +39,35 @@ class MinilibImage
    */
   private function __construct($img_name)
   {
-    $this->image_file_name = sfConfig::get('app_images_path', '').$img_name.'.'.sfConfig::get('app_image_file_type', 'png');
-    self::validateFile($this->image_file_name);
+    $this->image_file_name = $this->isFileValid($img_name) ? $img_name : self::NOT_AVAILABLE;
+    $this->thumbnail_file_name = $this->isFileValid($img_name, true) ? $img_name : self::NOT_AVAILABLE;
+  }
 
-    $this->thumbnail_file_name = sfConfig::get('app_thumbnails_path', '').'thumb_'.$img_name.'.'.sfConfig::get('app_image_file_type', 'png');
-    self::validateFile($this->thumbnail_file_name);
+  /**
+   * Create path template in "printf-like" format
+   *
+   * @param string $is_thumbnail
+   * 
+   * @return string
+   */
+  private function getRelativePath($is_thumbnail = false)
+  {
+    $path = $is_thumbnail == false ? sfConfig::get('app_images_relative_path', '') : sfConfig::get('app_thumbnails_relative_path', '');
+
+    return $path.'%s';
+  }
+
+  /**
+   * Get full image path
+   *
+   * @param string $filename
+   *
+   * @return string
+   */
+  private function getFullPath($filename, $is_thumbnail = false)
+  {
+    $relative_path = sprintf($this->getRelativePath($is_thumbnail), $filename);
+    return sfConfig::get('sf_web_dir').$relative_path;
   }
 
   /**
@@ -67,86 +96,110 @@ class MinilibImage
    *
    * @return void
    */
-  static private function validateFile($filename)
+  private function isFileValid($filename, $is_thumbnail = false)
   {
-    if (!file_exists($filename))
+    if (!file_exists($this->getFullPath($filename, $is_thumbnail)))
     {
-      throw new Exception('File '.$filename.' not found!');
+      return false;
     }
 
-    if (!is_writable($filename))
+    if (!is_writable($this->getFullPath($filename, $is_thumbnail)))
     {
-      throw new Exception('File '.$filename.' has incorrect permissions!');
+      return false;
+    }
+
+    return true;
+  }
+
+  /**
+   * Retrieve relative path for image
+   *
+   * @return string
+   */
+  public function getImageSrc()
+  {
+    return sprintf($this->getRelativePath(), $this->image_file_name);
+  }
+
+  /**
+   * Retrieve relative path for thumbnail
+   *
+   * @return string
+   */
+  public function getThumbnailSrc()
+  {
+    return sprintf($this->getRelativePath(true), $this->thumbnail_file_name);
+  }
+
+  /**
+   * Render relative path for image
+   *
+   * @return string
+   */
+  public function renderImageSrc()
+  {
+    printf($this->getRelativePath(), $this->image_file_name);
+  }
+
+  /**
+   * Render relative path for thumbnail
+   *
+   * @return string
+   */
+  public function renderThumbnailSrc()
+  {
+    printf($this->getRelativePath(true), $this->thumbnail_file_name);
+  }
+
+  /**
+   * Getter for image file name
+   *
+   * @return string
+   */
+  public function getImageFileName()
+  {
+    return $this->image_file_name;
+  }
+
+  /**
+   * Getter for thumbail file name
+   *
+   * @return string
+   */
+  public function getThumbnailFileName()
+  {
+    return $this->thumbnail_file_name;
+  }
+
+  public function createThumbnailFromFile($ext = 'png')
+  {
+    $create_function = ($ext == 'jpg') ? 'imagecreatefromjpeg' : 'imagecreatefrom'.$ext;
+    $save_function = ($ext == 'jpg') ? 'imagejpeg': 'image'.$ext;
+    try
+    {
+      // sizes
+      list($width, $height) = getimagesize($this->getFullPath($this->image_file_name));
+      $new_width = 98;
+      $new_height = 150;
+
+      // load
+      $thumb = imagecreatetruecolor($new_width, $new_height);
+
+      $ext = ($ext == 'jpg') ? 'jpeg' : $ext;
+
+      $source = call_user_func($create_function, $this->getFullPath($this->image_file_name));
+
+      // resize
+      imagecopyresized($thumb, $source, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
+
+      call_user_func_array($save_function, array($thumb, sfConfig::get('app_thumbnails_path', '').$this->image_file_name));
+      $this->thumbnail_file_name = $this->image_file_name;
+      // chmod our file
+      chmod($this->getFullPath($this->thumbnail_file_name, true), 0777);
+    }
+    catch (Exception $exc)
+    {
+      echo $exc->getTraceAsString();
     }
   }
-
-  /**
-   * Retrieve image in base64 format
-   *
-   * @return string
-   */
-  public function getBase64Image()
-  {
-    return $this->convertToBase64($this->image_file_name);
-  }
-
-  /**
-   * Retrieve thumbnail in base64 format
-   *
-   * @return string
-   */
-  public function getBase64Thumbnail()
-  {
-    return $this->convertToBase64($this->thumbnail_file_name);
-  }
-
-  /**
-   * Converts provided image file to base64 format
-   *
-   * @param string $file_name
-   *
-   * @return string
-   */
-  private function convertToBase64($file_name)
-  {
-    $fp = fopen($file_name, 'rb');
-    $buffer = fread($fp, filesize($file_name));
-    fclose ($fp);
-
-    return base64_encode($buffer);
-  }
-
-  /**
-   * Provides data URI for image
-   *
-   * @return void
-   */
-  public function getBase64ImageSrc()
-  {
-    echo self::createBase64DataUri($this->getBase64Image(), sfConfig::get('app_image_file_type', 'png'));
-  }
-
-  /**
-   * Provides data URI for thumbnail
-   * 
-   * @return void
-   */
-  public function getBase64ThumbnailSrc()
-  {
-    echo self::createBase64DataUri($this->getBase64Thumbnail(), sfConfig::get('app_image_file_type', 'png'));
-  }
-
-  /**
-   * Creates base64 data URI
-   *
-   * @param string $base64_image
-   * @param strinf $data_type Defaults to 'png'
-   *
-   * @return string
-   */
-  static public function createBase64DataUri($base64_image, $data_type = 'png')
-  {
-    return 'data:image/'.$data_type.';base64,'.$base64_image;
-  }
-
- }
+}

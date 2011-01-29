@@ -14,6 +14,7 @@ class BookForm extends BaseBookForm
   {
     unset($this['created_at'], $this['updated_at']);
 
+    // add tiny mce for description
     $tiny_mce_config = array(
         'width'  => 600,
         'height' => 250,
@@ -21,5 +22,21 @@ class BookForm extends BaseBookForm
     );
 
     $this->widgetSchema['description'] = new sfWidgetFormTextareaTinyMCE($tiny_mce_config);
+
+    // image handling
+    $img_name = MinilibImage::getInstance($this->getObject()->getImage())->getThumbnailSrc();
+
+    $this->widgetSchema['image'] = new sfWidgetFormInputFileEditable(array(
+			'file_src'     => $img_name,
+			'is_image'     => true,
+			'with_delete' => false
+		));
+
+    $this->validatorSchema['image'] = new sfValidatorFile(array(
+      'required'   => false,
+      'path'       => sfConfig::get('app_images_path'),
+      'mime_types' => 'web_images',
+      'validated_file_class' => 'MinilibValidatedFile'
+    ));
   }
 }
