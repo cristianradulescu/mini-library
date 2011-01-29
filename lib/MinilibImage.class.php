@@ -52,7 +52,7 @@ class MinilibImage
    */
   private function getRelativePath($is_thumbnail = false)
   {
-    $path = $is_thumbnail == false ? sfConfig::get('app_images_relative_path', '') : sfConfig::get('app_thumbnails_relative_path', '');
+    $path = $is_thumbnail ? sfConfig::get('app_thumbnails_relative_path', '') : sfConfig::get('app_images_relative_path', '');
 
     return $path.'%s';
   }
@@ -98,7 +98,7 @@ class MinilibImage
    */
   private function isFileValid($filename, $is_thumbnail = false)
   {
-    if (!file_exists($this->getFullPath($filename, $is_thumbnail)))
+    if (!is_file($this->getFullPath($filename, $is_thumbnail)))
     {
       return false;
     }
@@ -194,12 +194,13 @@ class MinilibImage
 
       call_user_func_array($save_function, array($thumb, sfConfig::get('app_thumbnails_path', '').$this->image_file_name));
       $this->thumbnail_file_name = $this->image_file_name;
-      // chmod our file
+
+      // chmod file
       chmod($this->getFullPath($this->thumbnail_file_name, true), 0777);
     }
     catch (Exception $exc)
     {
-      echo $exc->getTraceAsString();
+      throw $exc;
     }
   }
 }
