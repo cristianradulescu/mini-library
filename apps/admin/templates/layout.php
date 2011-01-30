@@ -13,13 +13,13 @@
     <div id="nav">
       <ul>
         <li<?php if ($sf_params->get('module') == 'book'): ?> class="current"<?php endif ?>>
-          <a href="<?php echo url_for('@book') ?>"><b>Books</b></a>
+          <a href="<?php echo url_for('@book') ?>"><b><?php echo __('Books') ?></b></a>
         </li>
         <li<?php if ($sf_params->get('module') == 'author'): ?> class="current"<?php endif ?>>
-          <a href="<?php echo url_for('@author') ?>"><b>Authors</b></a>
+          <a href="<?php echo url_for('@author') ?>"><b><?php echo __('Authors') ?></b></a>
         </li>
         <li<?php if ($sf_params->get('module') == 'publisher'): ?> class="current"<?php endif ?>>
-          <a href="<?php echo url_for('@publisher') ?>"><b>Publishers</b></a>
+          <a href="<?php echo url_for('@publisher') ?>"><b><?php echo __('Publishers') ?></b></a>
         </li>
       </ul>
     </div>

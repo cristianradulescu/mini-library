@@ -6,10 +6,10 @@ default:
     content-type: text/html
 
   metas:
-    title:        Library
+    title:        Books
     #description:  symfony project
     #keywords:     symfony, project
-    #language:     en
+    language:     ro
     #robots:       index, follow
 
   stylesheets:    [main.css, frontend.css, ../sfFormExtraPlugin/css/jquery.autocompleter.css, ../js/jquery/fancybox/jquery.fancybox-1.3.4.css]

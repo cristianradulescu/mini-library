@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="ro" datatype="plaintext" original="messages" date="2011-01-30T16:49:19Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit>
+        <source>ISBN</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Author</source>
+        <target>Autor</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Authors</source>
+        <target>Autori</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Publisher</source>
+        <target>Editura</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Publishers</source>
+        <target>Edituri</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Book</source>
+        <target>Carte</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Books</source>
+        <target>Cărți</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Title</source>
+        <target>Titlu</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Year</source>
+        <target>Anul</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Name</source>
+        <target>Nume</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Book List</source>
+        <target>Listă Cărți</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Author List</source>
+        <target>Listă Autori</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Publisher List</source>
+        <target>Listă Edituri</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

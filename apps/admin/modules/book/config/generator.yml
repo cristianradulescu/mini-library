@@ -25,4 +25,4 @@ generator:
       edit:
         display: [id, title, author_id, publisher_id, description, image, isbn, year]
       new:
-        display: [id, title, author_id, publisher_id, description, inage, isbn, year]
+        display: [id, title, author_id, publisher_id, description, image, isbn, year]
