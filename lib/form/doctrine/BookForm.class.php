@@ -38,5 +38,11 @@ class BookForm extends BaseBookForm
       'mime_types' => 'web_images',
       'validated_file_class' => 'MinilibValidatedFile'
     ));
+
+   $this->validatorSchema['image']->setOption('mime_type_guessers', array(
+      array($this->validatorSchema['image'], 'guessFromFileinfo'),
+      array($this->validatorSchema['image'], 'guessFromFileBinary'),
+      array($this->validatorSchema['image'], 'guessFromMimeContentType')
+    ));
   }
 }
