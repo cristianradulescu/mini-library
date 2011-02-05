@@ -30,7 +30,7 @@
       </trans-unit>
       <trans-unit>
         <source>Books</source>
-        <target>Cărți</target>
+        <target>Carti</target>
       </trans-unit>
       <trans-unit>
         <source>Title</source>
@@ -41,20 +41,58 @@
         <target>Anul</target>
       </trans-unit>
       <trans-unit>
+        <source>Image</source>
+        <target>Imagine</target>
+      </trans-unit>
+      <trans-unit>
         <source>Name</source>
         <target>Nume</target>
       </trans-unit>
       <trans-unit>
         <source>Book List</source>
-        <target>Listă Cărți</target>
+        <target>Lista Carti</target>
+      </trans-unit>
+      <trans-unit>
+        <source>New Book</source>
+        <target>Carte Noua</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit Book</source>
+        <target>Editeaza Carte</target>
       </trans-unit>
       <trans-unit>
         <source>Author List</source>
-        <target>Listă Autori</target>
+        <target>Lista Autori</target>
+      </trans-unit>
+      <trans-unit>
+        <source>New Author</source>
+        <target>Autor Nou</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit Author</source>
+        <target>Editeaza Autor</target>
       </trans-unit>
       <trans-unit>
         <source>Publisher List</source>
-        <target>Listă Edituri</target>
+        <target>Lista Edituri</target>
+      </trans-unit>
+      <trans-unit>
+        <source>New Publisher</source>
+        <target>Editura Noua</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit Publisher</source>
+        <target>Editeaza Editura</target>
+      </trans-unit>
+
+      <!-- form stuff -->
+      <trans-unit>
+        <source>Delete</source>
+        <target>Stergere</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Reset</source>
+        <target>Anulare</target>
       </trans-unit>
     </body>
   </file>

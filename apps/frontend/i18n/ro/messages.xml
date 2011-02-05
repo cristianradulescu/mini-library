@@ -10,7 +10,7 @@
       </trans-unit>
       <trans-unit id="2">
         <source>home</source>
-        <target>prima pagină</target>
+        <target>prima pagina</target>
       </trans-unit>
       <trans-unit id="3">
         <source>Publishers</source>
@@ -22,23 +22,23 @@
       </trans-unit>
       <trans-unit id="5">
         <source>Author not found</source>
-        <target>Autorul nu a fost găsit</target>
+        <target>Autorul nu a fost gasit</target>
       </trans-unit>
       <trans-unit id="6">
         <source>Publisher not found</source>
-        <target>Editura nu a fost găsita</target>
+        <target>Editura nu a fost gasita</target>
       </trans-unit>
       <trans-unit id="7">
         <source>Search books</source>
-        <target>Caută cărți</target>
+        <target>Cauta carti</target>
       </trans-unit>
       <trans-unit id="8">
         <source>search</source>
-        <target>caută</target>
+        <target>cauta</target>
       </trans-unit>
       <trans-unit id="9">
         <source>Books</source>
-        <target>Cărți</target>
+        <target>Carti</target>
       </trans-unit>
       <trans-unit id="10">
         <source>more details</source>
@@ -66,7 +66,7 @@
       </trans-unit>
       <trans-unit id="16">
         <source>books</source>
-        <target>cărți</target>
+        <target>carti</target>
       </trans-unit>
       <trans-unit id="17">
         <source>page</source>
