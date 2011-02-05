@@ -25,5 +25,10 @@
     </div>
 
     <?php echo $sf_content ?>
+
+    <hr />
+    <div id="footer">
+      &laquo; Proiect de licenta | Absolvent: Cristian RADULESCU | Coordonator: Conf. dr. ing. Daniela DANCIU &raquo;
+    </div>
   </body>
 </html>

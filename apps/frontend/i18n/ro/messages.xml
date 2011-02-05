@@ -6,7 +6,7 @@
     <body>
       <trans-unit id="1">
         <source>books list</source>
-        <target>listă cărți</target>
+        <target>lista carti</target>
       </trans-unit>
       <trans-unit id="2">
         <source>home</source>

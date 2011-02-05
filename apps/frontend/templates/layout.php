@@ -51,15 +51,14 @@
 
 
       <div class="footer">
+        <div class="left_footer">
+          &laquo; Proiect de licenta | Absolvent: Cristian RADULESCU | Coordonator: Conf. dr. ing. Daniela DANCIU &raquo;
+        </div>
         <div class="right_footer">
           <a href="<?php echo url_for('@homepage') ?>"><?php echo __('home') ?></a>
         </div>
 
-
       </div>
-
-
     </div>
-
   </body>
 </html>

@@ -9,9 +9,7 @@
     <ul class="list">
       <?php foreach ($publishers as $publisher): ?>
         <li>
-          <a href="<?php echo url_for2('filter_books_by_publisher', array('publisher_id' => $publisher->getId()))?>">
-            <?php echo $publisher->getName() ?>
-          </a> (<?php echo $publisher->getBooksCount() ?>)
+          <a href="<?php echo url_for2('filter_books_by_publisher', array('publisher_id' => $publisher->getId()))?>"><?php echo $publisher->getName() ?></a> (<?php echo $publisher->getBooksCount() ?>)
         </li>
       <?php endforeach ?>
     </ul>
@@ -26,9 +24,7 @@
     <ul class="list">
       <?php foreach ($authors as $author): ?>
         <li>
-          <a href="<?php echo url_for2('filter_books_by_author', array('author_id' => $author->getId()))?>">
-            <?php echo $author->getName() ?>
-          </a> (<?php echo $author->getBooksCount() ?>)
+          <a href="<?php echo url_for2('filter_books_by_author', array('author_id' => $author->getId()))?>"><?php echo $author->getName() ?></a> (<?php echo $author->getBooksCount() ?>)
         </li>
       <?php endforeach ?>
     </ul>
