@@ -9,7 +9,7 @@
     <?php include_javascripts() ?>
   </head>
   <body>
-
+    <?php if ($sf_user->isAuthenticated()): ?>
     <div id="nav">
       <ul>
         <li<?php if ($sf_params->get('module') == 'book'): ?> class="current"<?php endif ?>>
@@ -21,8 +21,12 @@
         <li<?php if ($sf_params->get('module') == 'publisher'): ?> class="current"<?php endif ?>>
           <a href="<?php echo url_for('@publisher') ?>"><b><?php echo __('Publishers') ?></b></a>
         </li>
+        <li>
+          <a href="<?php echo url_for('@sf_guard_signout') ?>"><b><?php echo __('Logout') ?></b></a>
+        </li>
       </ul>
     </div>
+    <?php endif; ?>
 
     <?php echo $sf_content ?>
 

@@ -37,3 +37,10 @@ all:
     default_culture: ro_RO
     charset: utf-8
     i18n: true
+
+    # modules
+    enabled_modules:        [sfGuardAuth]
+
+  .actions:
+    login_module:           sfGuardAuth
+    login_action:           signin

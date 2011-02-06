@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" datatype="plaintext">
+    <header/>
+    <body>
+      <trans-unit>
+        <source>Username</source>
+        <target>Utilizator</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Password</source>
+        <target>Parola</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Remember</source>
+        <target>Tine-ma minte</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Signin</source>
+        <target>Accesare</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Forgot your password?</source>
+        <target>Recuperare parola</target>
+      </trans-unit>
+      <trans-unit>
+        <source>You don't have the required permission to access this page.</source>
+        <target>Nu ai permisiunea de a accesa aceasta pagina.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

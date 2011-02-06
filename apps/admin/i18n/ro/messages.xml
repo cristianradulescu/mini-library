@@ -94,6 +94,20 @@
         <source>Reset</source>
         <target>Anulare</target>
       </trans-unit>
+
+      <!-- login form -->
+      <trans-unit>
+        <source>Username or E-Mail</source>
+        <target>Utilizator sau e-mail</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Password</source>
+        <target>Parola</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Remember</source>
+        <target>Tine-ma minte</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
